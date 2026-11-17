@@ -2,7 +2,7 @@
 
 What survives aWISH, an €8m Horizon Europe project (grant 101060818, November 2022 to October 2026) that put welfare cameras and sensors into six European slaughterhouses, and what a successor could do with it.
 
-Written by Otto Tutzauer Hellström in the Sentient Futures Project Incubator 2026, mentored by Aaron Boddy (Ambitious Impact).
+Written by Otto Tutzauer Hellström in the Sentient Futures Project Incubator 2026, mentored by Aaron Boddy (Ambitious Impact). Contact, including for anything marked "available on request": otto@tutzauer.se.
 
 ## Start here
 
@@ -12,7 +12,7 @@ Everything submitted to the Sentient Futures Project Incubator is in this reposi
 2. **Short cost-effectiveness workbook**: [`models/aWISH CEA, short version (central values).xlsx`](models/), also as a [Google Sheet](https://docs.google.com/spreadsheets/d/1-Cx6y7wdWo0mXg12MKSzaw0HG6ift-OizY8DP3UPelM/edit). The step table in section 4 of the brief, with live formulas.
 3. **Handover pack A**, what has been validated: [`handover-pack/A-what-validated.md`](handover-pack/A-what-validated.md).
 4. **Handover pack B**, the six pilot plants: [`handover-pack/B-per-pilot-sheet.md`](handover-pack/B-per-pilot-sheet.md).
-5. **Verification logs**: [`verification/`](verification/), the source, page and verdict for every claim in the brief (135) and in packs A and B (479).
+5. **Verification logs**: [`verification/`](verification/), the source, page and verdict for every claim in the brief (135) and in packs A and B (479). The figures added to packs A and B on 17 Nov (P8 tail length, P10 BlinkAI, Lesion-Detect in Serbia) are the same claims the brief makes, checked in the brief's log as rows F-04, F-05 and P02·F-10.
 
 ## What is here
 

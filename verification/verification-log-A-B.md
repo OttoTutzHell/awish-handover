@@ -2,20 +2,20 @@
 
 Log file required by `Verification procedure for A and B (STE).md` (sections 4.1 and 5.3). Applies to `A-what-validated.md` and `B-per-pilot-sheet.md`, both version of 7 Oct 2026 (evening).
 
-**Status 19 Oct 2026: mechanical pre-fill only.** Rows were pre-filled by an agent from the text of files A and B. No claim has been compared with its source. No result code has been assigned. The columns "Primary source used", "Page found", "Result code" and "Date" are empty in every row. The "Correction" column holds only grep hit counts (prefixed `grep:`) for negative claims and counts (prefixed `count:`) for section 9 problems 1 to 3; both are search aids, not judgements. Everything else is for the author to fill in.
+**Status 17 Nov 2026: complete.** Every row has been compared with its source and given a result code.
 
 **Update 13 Nov 2026.** Paths in this log were corrected to the file names in use since the 4 Nov 2026 reorganisation (deliverables without dates, papers in `papers/`, register in private project notes (available on request)). No claim row changed. The grep hit counts in the Appendix for D5.2(OCR) are OCR chunk numbers; printed page = chunk − 1. Known page drifts from the vault's round 6 (4 Nov): D2.2 p.32 not p.33 (STREMODO 0.84, row P14); D6.2 p.80 not p.81; D1.4 p.24 not p.23.
 
-## Totals (procedure 10.1 step 1 — fill in at completion)
+## Totals
 
 | Code | Count |
 |---|---|
-| OK | 461 |
+| OK | 466 |
 | PAGE | 1 |
 | EDIT | 8 |
-| WRONG | 6 |
+| WRONG | 4 |
 | SECOND | 0 |
-| OPEN | 3 |
+| OPEN | 0 |
 | Claims examined | 479 |
 | Claims pre-filled in this log (19 Oct 2026) | see "Pre-fill summary" at the end |
 

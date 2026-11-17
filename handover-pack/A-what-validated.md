@@ -1,6 +1,6 @@
 # A. What aWISH has validated — indicator × sensor source table
 
-Rows carrying aWISH-period validation figures: **4** (P3 Weight-Detect, P9 Lesion-Detect, B10 ChickenCheck footpad, B11 ChickenCheck hock). Lesion-Detect has a peer-reviewed aWISH-period validation (Banhazi et al. 2026, Agronomy Research 24(2):76–95, published 25 May 2026). It is the only pig slaughterhouse sensor with one; every other pig-row figure is a pre-aWISH third-party study of a vendor system.
+Rows carrying aWISH-period validation figures: **4** (P3 Weight-Detect, P9 Lesion-Detect, B10 ChickenCheck footpad, B11 ChickenCheck hock). Lesion-Detect has a peer-reviewed aWISH-period validation (Banhazi et al. 2026, Agronomy Research 24(2):76–95, published 25 May 2026). It is the only pig slaughterhouse sensor with one. Every other pig-row figure is either a pre-aWISH third-party study of a vendor system or, for P8 and P10, unreviewed slides from aWISH's Final Event.
 
 **Sources beyond the core deliverables.** Because D1.2 contains no TRLs, the per-pilot TRL statements were taken from `D1.6 Practice abstracts batch 1.txt` (pp.9–11), the pilot technology list from `D1.8 Policy briefs … (M36, Oct 2025).txt` (pp.25–30 of the text split), and the publication list from `CORDIS listing 101060818.txt` (pp.3–7). All three are cited by page; cells drawn from them are marked **[D1.6]**, **[D1.8]**, **[CORDIS]**. Web sources are cited by URL. Page = Nth form-feed-delimited chunk (page 1 before the first \f); for D2.1/D2.2/D1.6 this coincides with the printed page number.
 
