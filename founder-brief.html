@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>aWISH Founder Brief</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a dossier. One reading column (~68ch) with a sticky section nav; every section opens with the short read, and the depth sits in disclosures beneath it. Same system as the 22 Oct progress brief, so a returning reader sees one page growing rather than a new one. */
+:root {
+  --bg: #f7f6f2;
+  --surface: #ffffff;
+  --surface-2: #eeece6;
+  --line: #d9d5cb;
+  --fg: #1d1f24;
+  --muted: #5c5f68;
+  --accent: #1f4f7a;
+  --accent-ink: #ffffff;
+  --accent-soft: #e3ecf4;
+  --good: #2a7a4b;  --good-soft: #e0f0e6;
+  --warn: #9a6400;  --warn-soft: #f6ecd2;
+  --crit: #a7342f;  --crit-soft: #f6e0dd;
+  --hold: #5c5f68;  --hold-soft: #e8e7e2;
+  --note: #fff7d6;  --note-line: #d9b740;
+  --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #16181c; --surface: #1e2126; --surface-2: #262a30; --line: #363b43;
+  --fg: #e8e6e0; --muted: #a3a6ad;
+  --accent: #7fb0d8; --accent-ink: #0f1720; --accent-soft: #223241;
+  --good: #7cc89a; --good-soft: #1f3a2b;
+  --warn: #e0b45a; --warn-soft: #3d3215;
+  --crit: #ea8a84; --crit-soft: #452320;
+  --hold: #a3a6ad; --hold-soft: #2d3037;
+  --note: #3a3419; --note-line: #b99a2e;
+  color-scheme: dark;
+} }
+:root[data-theme="dark"] {
+  --bg: #16181c; --surface: #1e2126; --surface-2: #262a30; --line: #363b43;
+  --fg: #e8e6e0; --muted: #a3a6ad;
+  --accent: #7fb0d8; --accent-ink: #0f1720; --accent-soft: #223241;
+  --good: #7cc89a; --good-soft: #1f3a2b;
+  --warn: #e0b45a; --warn-soft: #3d3215;
+  --crit: #ea8a84; --crit-soft: #452320;
+  --hold: #a3a6ad; --hold-soft: #2d3037;
+  --note: #3a3419; --note-line: #b99a2e;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.55; margin: 0; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.wrap { max-width: 920px; margin: 0 auto; padding-block: 0 72px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+/* Header */
+header.doc { padding-block: 40px 20px; border-bottom: 2px solid var(--fg); }
+.eyebrow { font-family: var(--display); font-weight: 600; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px; }
+h1 { font-family: var(--display); font-weight: 700; font-size: clamp(32px, 5vw, 46px); line-height: 1.05; margin: 0 0 14px; letter-spacing: -0.01em; text-wrap: balance; }
+.lede { font-size: 19px; max-width: 68ch; margin: 0; color: var(--fg); }
+.lede b { font-weight: 600; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 22px; margin-top: 16px; font-family: var(--mono); font-size: 12.5px; color: var(--muted); }
+
+/* Strip */
+.strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 24px; }
+.strip > div { background: var(--surface); padding: 12px 14px; min-width: 0; }
+.strip .k { font-family: var(--display); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.strip .v { font-family: var(--display); font-weight: 700; font-size: 22px; line-height: 1.1; margin-top: 4px; font-variant-numeric: tabular-nums; }
+.strip .s { font-size: 13.5px; color: var(--muted); margin-top: 2px; }
+
+/* Nav */
+nav.toc { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); margin: 0 0 8px; padding-block: 8px; display: flex; gap: 4px 14px; flex-wrap: wrap; align-items: center; font-family: var(--display); font-size: 13px; font-weight: 600; }
+nav.toc a { color: var(--muted); text-decoration: none; padding: 4px 0; }
+nav.toc a:hover, nav.toc a[aria-current="true"] { color: var(--accent); }
+nav.toc .spacer { flex: 1; }
+nav.toc button { font: inherit; font-size: 12.5px; background: none; border: 1px solid var(--line); color: var(--muted); padding: 4px 10px; border-radius: 3px; cursor: pointer; }
+nav.toc button:hover { border-color: var(--accent); color: var(--accent); }
+
+/* Sections */
+section { padding-block: 36px 8px; scroll-margin-top: 64px; }
+section + section { border-top: 1px solid var(--line); }
+h2 { font-family: var(--display); font-weight: 700; font-size: 26px; line-height: 1.15; margin: 0 0 6px; letter-spacing: -0.005em; text-wrap: balance; }
+h2 .num { color: var(--muted); font-weight: 500; margin-right: 10px; font-variant-numeric: tabular-nums; }
+h3 { font-family: var(--display); font-weight: 600; font-size: 16px; margin: 24px 0 8px; }
+.surface { max-width: 68ch; }
+.surface p { margin: 10px 0; }
+p.read { font-size: 15px; color: var(--muted); font-style: italic; margin: 0 0 14px; max-width: 72ch; }
+ul.lines { list-style: none; padding: 0; margin: 12px 0; max-width: 72ch; }
+ul.lines li { padding: 8px 0 8px 18px; border-left: 3px solid var(--line); margin: 6px 0; }
+ul.lines li b { font-weight: 600; }
+ul.plain { margin: 8px 0; padding-left: 20px; max-width: 70ch; }
+ul.plain li { margin: 5px 0; }
+blockquote { margin: 10px 0; padding: 2px 0 2px 16px; border-left: 3px solid var(--accent); color: var(--muted); font-style: italic; max-width: 66ch; }
+
+/* Pills and tags */
+.pill { display: inline-block; font-family: var(--display); font-size: 11.5px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; padding: 2px 8px; border-radius: 3px; white-space: nowrap; vertical-align: middle; }
+.pill.good { background: var(--good-soft); color: var(--good); }
+.pill.warn { background: var(--warn-soft); color: var(--warn); }
+.pill.crit { background: var(--crit-soft); color: var(--crit); }
+.pill.hold { background: var(--hold-soft); color: var(--hold); }
+.pill.acc { background: var(--accent-soft); color: var(--accent); }
+.tag { display: inline-block; font-family: var(--mono); font-size: 11px; color: var(--muted); border: 1px solid var(--line); padding: 0 5px; border-radius: 2px; white-space: nowrap; vertical-align: middle; }
+.src { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+
+/* Verification banner */
+.verif { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; margin: 14px 0 0; font-family: var(--display); font-size: 13px; }
+.verif .pill { font-size: 11px; }
+
+/* Cards */
+.cards { display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 14px; }
+.cards.two { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+.card { background: var(--surface); border: 1px solid var(--line); padding: 14px 16px; min-width: 0; }
+.card .head { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: baseline; }
+.card .head h3 { margin: 0; font-size: 17px; }
+.card .head .pill { margin-left: auto; }
+.card p { margin: 8px 0 0; font-size: 15.5px; max-width: 72ch; }
+.card ul { margin: 8px 0 0; padding-left: 20px; font-size: 15px; }
+.card li { margin: 4px 0; }
+
+/* Disclosures */
+details { margin: 10px 0 0; border-top: 1px dashed var(--line); }
+details > summary { cursor: pointer; list-style: none; font-family: var(--display); font-weight: 600; font-size: 14px; color: var(--accent); padding: 9px 0 6px; display: flex; align-items: center; gap: 8px; }
+details > summary::-webkit-details-marker { display: none; }
+details > summary::before { content: ""; width: 7px; height: 7px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(-45deg); transition: transform .15s; flex: none; }
+details[open] > summary::before { transform: rotate(45deg); }
+details > *:not(summary) { font-size: 15.5px; }
+details .inner { padding: 2px 0 10px; max-width: 72ch; }
+details .inner p { margin: 8px 0; }
+@media (prefers-reduced-motion: reduce) { details > summary::before { transition: none; } }
+
+/* Tables */
+.tbl { overflow-x: auto; margin: 12px 0 4px; border: 1px solid var(--line); background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 14.5px; }
+th, td { text-align: left; vertical-align: top; padding: 9px 11px; border-bottom: 1px solid var(--line); }
+th { font-family: var(--display); font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); background: var(--surface-2); font-weight: 600; }
+tr:last-child td { border-bottom: 0; }
+td.q, td.n { font-family: var(--mono); font-size: 12.5px; white-space: nowrap; color: var(--muted); font-variant-numeric: tabular-nums; }
+td.n { text-align: right; }
+th.n { text-align: right; }
+td .pill { margin-top: 1px; }
+td b { font-weight: 600; }
+tr.top td { background: var(--accent-soft); }
+
+/* Big figures (the CE headline) */
+.figs { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin: 14px 0 6px; }
+.figs > div { background: var(--surface); border: 1px solid var(--line); padding: 12px 14px; min-width: 0; }
+.figs .k { font-family: var(--display); font-weight: 600; font-size: 13px; }
+.figs .v { font-family: var(--display); font-weight: 700; font-size: 30px; line-height: 1.05; margin-top: 4px; font-variant-numeric: tabular-nums; }
+.figs .v small { font-size: 14px; font-weight: 500; color: var(--muted); }
+.figs .s { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+/* Fill-in note */
+.fill { background: var(--note); border: 1px solid var(--note-line); border-left-width: 5px; padding: 12px 16px; margin: 16px 0; max-width: 72ch; }
+.fill .lbl { font-family: var(--display); font-weight: 700; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 4px; }
+.fill p { margin: 4px 0; font-size: 15px; }
+.fill ul { margin: 6px 0 0; padding-left: 20px; font-size: 15px; }
+.fill li { margin: 4px 0; }
+.fill .blank { font-family: var(--mono); font-size: 13px; color: var(--muted); }
+
+/* Index grid */
+.index { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin-top: 14px; }
+.index > div { background: var(--surface); border: 1px solid var(--line); padding: 12px 14px; min-width: 0; font-size: 14.5px; }
+.index .t { font-family: var(--display); font-weight: 600; font-size: 14.5px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.index .t .pill { margin-left: auto; }
+.index p { margin: 6px 0 0; color: var(--muted); }
+.index code { font-family: var(--mono); font-size: 12.5px; }
+
+footer { margin-top: 40px; padding-top: 16px; border-top: 2px solid var(--fg); font-size: 14px; color: var(--muted); max-width: 72ch; }
+footer p { margin: 6px 0; }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+<header class="doc">
+  <p class="eyebrow">aWISH handover · Sentient Futures Project Incubator 2026 · founder brief</p>
+  <h1>What survives aWISH, and what a successor could do with it</h1>
+  <p class="lede">For whoever picks this up in 2027. aWISH was an €8m EU project that put cameras and sensors into six slaughterhouses to score animal welfare on the line and feed the scores back to farms. It closed on 31 October 2026 with no plan for what comes next. <b>This page lists what it left behind, which of its 19 technologies are most promising, what a programme around each would avert per dollar, and the two forms a successor could take.</b> Detail sits under each section; the source and page for every claim are in the verification log published with packs A and B, and section 8 lists what is submitted with this page.</p>
+  <div class="meta"><span>The project: aWISH</span><span>Horizon Europe 101060818 · coordinated by ILVO · 28 partners · €8.0m · Nov 2022 – Oct 2026</span></div>
+  <div class="meta" style="margin-top: 4px"><span>This brief: Otto Tutzauer Hellström</span><span>Sentient Futures Project Incubator 2026 · mentor Aaron Boddy (Ambitious Impact)</span></div>
+  <div class="verif">
+    <span class="pill good">Checked against sources</span><span>every claim on this page</span>
+    <span class="pill acc">Estimate</span><span>detailed cost, probability and timing figures, the ranking scores, and licence and continuation reads</span>
+    <span class="pill hold">Not submitted</span><span>the vault, handover packs C to S and the full model (on request)</span>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Sections">
+  <a href="#onepage">One page</a>
+  <a href="#primers">Primers</a>
+  <a href="#ranking">Ranking</a>
+  <a href="#ce">Cost-effectiveness</a>
+  <a href="#shapes">Shapes</a>
+  <a href="#handoff">Handoff</a>
+  <a href="#verification">Verification</a>
+  <a href="#index">Index</a>
+  <span class="spacer"></span>
+  <button type="button" id="toggleAll">Expand all</button>
+</nav>
+
+<!-- 1 ONE PAGE -->
+<section id="onepage">
+  <h2><span class="num">1</span>aWISH in one page</h2>
+  <p class="read">What it was, where it ran, what survives on its own and what does not. Condensed from the handover brief (available on request) and the project profile.</p>
+  <div class="surface">
+    <p><b>What it was.</b> Animal Welfare Indicators at the Slaughterhouse (aWISH). A Horizon Europe project, €8.0m, 28 partners in 11 countries, November 2022 to 31 October 2026, coordinated by ILVO, the Flanders Research Institute for Agriculture, Fisheries and Food, in Belgium. Fattening pigs and broilers only. The objective was to evaluate and improve welfare</p>
+    <blockquote>via automated monitoring of animal-based welfare indicators at the slaughterhouse in order to give feedback and advice on best practices</blockquote>
+    <p>to the farmer, the catching team, the transporter and the slaughterhouse. It set out to produce five things:</p>
+    <ul class="plain">
+      <li>an <b>AWI Catalogue</b> of animal welfare indicators (AWIs) that can be measured automatically at slaughter</li>
+      <li>a <b>central data platform and feedback tool</b> giving each actor per-batch feedback and benchmarking</li>
+      <li>integrated welfare assessment at farm, chain, regional and national level, plus an intervention study</li>
+      <li>nine <b>Best Practice Guides</b></li>
+      <li>stakeholder engagement with an expert panel</li>
+    </ul>
+    <p><b>Where.</b> Six pilot slaughterhouses in six countries, each co-led by a research partner:</p>
+    <ul class="plain">
+      <li>Vion Groenlo, Netherlands (pigs)</li>
+      <li>Batallé, Spain (pigs)</li>
+      <li>DUC Chailley, France (broilers)</li>
+      <li>Plukon Sieradz, Poland (broilers)</li>
+      <li>Grossfurtner, Austria (pigs)</li>
+      <li>Carnex, Serbia (pigs)</li>
+    </ul>
+    <p><b>With what.</b> Sensors from vendors and from research partners:</p>
+    <ul class="plain">
+      <li>carcass-lesion and footpad cameras (CLK)</li>
+      <li>a pig stunning-effectiveness sensor (Nuna Solutions)</li>
+      <li>lung and liver lesion sensors at evisceration, and on-farm weight and climate sensors (Innotech Vision / PLF Agritech)</li>
+      <li>a stress-vocalisation monitor and a blood stress assay (FBN, the Research Institute for Farm Animal Biology, Germany)</li>
+      <li>broiler sound and image tools for the farm and transport (Itavi, the French poultry technical institute)</li>
+      <li>barn-climate sensors (Bit Gear)</li>
+      <li>a tear-staining camera (ILVO) and a tail camera (Universitat Autònoma de Barcelona, UAB, with Selección Batallé)</li>
+    </ul>
+    <p><b>Why continue it?</b> Four reasons:</p>
+    <ul class="plain">
+      <li>epidemiological welfare data the movement lacks</li>
+      <li>correlating welfare outcomes with farming practices</li>
+      <li>a basis for policy and certification thresholds</li>
+      <li>the choke point: far fewer slaughterhouses than farms, so instrumenting plants reaches more animals per unit of effort</li>
+    </ul>
+    <p>The caveats are under "No successor" in section 5.</p>
+  </div>
+
+  <h3>What survives on its own, and what does not</h3>
+  <div class="tbl"><table>
+    <tr><th>Asset</th><th>Held by</th><th>Default outcome</th><th>Hangs on (questions in section 6)</th></tr>
+    <tr><td><b>Industry relationships</b>: which plants cooperated, on what terms, who the contacts are</td><td>The six pilot co-leads and ILVO, as people</td><td><span class="pill crit">Lost</span> Researchers move on within months; contacts go cold in about a year</td><td class="q">Q4, Q8</td></tr>
+    <tr><td><b>Data platform and feedback tool</b></td><td>UBITECH, Utrecht University</td><td><span class="pill warn">At risk</span> Retention set by cloud-storage cost; nothing feeds it after 31 Oct</td><td class="q">Q1, Q2</td></tr>
+    <tr><td><b>Historical pilot data</b></td><td>The plants and partners; 32 Data Sharing Agreements held by ILVO</td><td><span class="pill warn">At risk</span> No pilot commits data to open deposit; the DUC pilot in France deletes raw data at project end</td><td class="q">Q2, Q8</td></tr>
+    <tr><td><b>Prototype hardware</b> (technology readiness level, TRL, 3–6)</td><td>CLK, Nuna, Innotech, FBN, Itavi, ILVO, Bit Gear</td><td><span class="pill crit">Lost</span> Kit nobody pays for gets removed; we estimate that only Plukon's two ChickenCheck stations have a visible path to being kept deployed</td><td class="q">Q4</td></tr>
+    <tr><td><b>Sensor intellectual property (IP) and algorithms</b></td><td>The vendors; UAB and ILVO for the research-side cameras</td><td><span class="pill hold">Preserved, private</span> No vendor has stated licensing intent in any public source</td><td class="q">Q5, Q7</td></tr>
+    <tr><td><b>Newsletter list and social accounts</b></td><td>CONSULAI, BioSense</td><td><span class="pill crit">Lost</span> The EU's General Data Protection Regulation (GDPR) bars handing the list over; account ownership is not clear from any project document</td><td class="q">Q3</td></tr>
+    <tr><td><b>Validation results</b></td><td>ILVO, Utrecht, UAB, the University of Copenhagen (UCPH), CLK</td><td><span class="pill hold">Preserved</span> But the pig results sit in deliverables not yet public</td><td class="q">Q6</td></tr>
+    <tr><td><b>Website, AWI Catalogue, public deliverables, publications, e-course</b></td><td>BioSense, ILVO, UCPH, the Polish Academy of Sciences' Institute of Genetics and Animal Biotechnology (IGBZ PAN)</td><td><span class="pill good">Preserved</span> Everything published survives by EU policy, for as long as BioSense keeps the site up</td><td class="q">Q3, Q6</td></tr>
+  </table></div>
+  <p class="src">The full register (13 rows, most at risk first) is in the vault, available on request.</p>
+</section>
+
+
+<!-- 2 PRIMERS -->
+<section id="primers">
+  <h2><span class="num">2</span>Three primers</h2>
+  <p class="read">For a reader who has never been inside a plant: the slaughterhouse, where the sensors sit, and what "validated" means in this project.</p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="head"><h3>A. The slaughterhouse</h3><span class="pill good">Verified</span></div>
+      <p>The EU slaughters about 222 million pigs and about 6.3 billion broilers a year (2024; the pig figure is Eurostat's, the broiler figure an estimate from Eurostat's chicken count, which also includes spent hens). Most of them go through a few dozen industrial plants per major country, run by a handful of companies. Germany's top ten pig slaughterers handled three quarters of 44.9 million pigs in 2025; four companies dominate Dutch pig slaughter. Margins are thin: Vion's EBITDA (earnings before interest, tax, depreciation and amortisation) was 1.5 % of revenue in 2023, and Westfleisch's 2024 operating result spread over its pigs is about €2.9 per pig, the same order as what tail lesions and condemnations cost per pig (Irish data, 2010–12).</p>
+      <ul>
+        <li>A fixed camera sees each pig carcass for 2 to 9 seconds and each broiler for a fifth of a second at 18,000 birds an hour. That is the engineering constraint behind every sensor below.</li>
+        <li>Plants say stunning almost never fails; auditors say it often does. CO₂ plants self-report 0 to 0.05 % ineffective stuns; field audits found signs of insufficient stun depth in 7.5 % of CO₂-stunned pigs. About two thirds of EU pigs are CO₂-stunned.</li>
+        <li>Camera mandates are arriving (Spain since 2023; Germany adopted one on 5 Nov 2026; Flanders in principle; a Dutch draft has been through public consultation but has not been found before parliament), but none yet asks for automated analysis. The Dutch draft is the only text that expressly contemplates prescribing it.</li>
+        <li>No single count of EU slaughterhouses exists. Eurostat publishes none, and national lists of approved plants run to hundreds while the volume sits in a few dozen.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="head"><h3>B. Where the sensors sit</h3><span class="pill good">Verified</span></div>
+      <p>Each aWISH sensor sits at one point on the line and sees one thing. What it sees decides who can act on it: footpad dermatitis and hock burn clearly originate on the farm weeks earlier, so a slaughter score is only useful as feedback to the grower; a failed stun is seconds old and the plant can act on it directly; catch damage could come from catching, transport or lairage and is hard to assign.</p>
+      <ul>
+        <li><b>Unloading and lairage (pigs):</b> AI4Animals handling CCTV (Deloitte, at Vion); STREMODO microphones for stress calls (FBN), installed in the unloading and lairage area.</li>
+        <li><b>Stunner exit (pigs):</b> BlinkAI eye camera (Nuna). The stunner exit is where practice diverges most from guidance: aWISH's own guide (deliverable D4.3) asks for sticking within 20 seconds of gondola exit, the commonly cited maximum stun-to-stick interval is 60 seconds, and the one recent field study we found (Sweden, 2023–24, five plants) measured a mean of 90 seconds, range 32–199.</li>
+        <li><b>Carcass line after singeing (pigs):</b> PigInspector for skin, ear and tail lesions and tail length (CLK); the UAB tail camera; ILVO's tear-staining camera at Batallé (station not stated).</li>
+        <li><b>After plucking (broilers):</b> ChickenCheck catch damage and scratch cameras on the carcass, and footpad and hock burn on the separated feet (CLK).</li>
+        <li><b>Evisceration (pigs):</b> Lesion-Detect lung and liver lesions (Innotech), at Batallé and Carnex.</li>
+        <li><b>Not on the slaughter line:</b> EBroilerTrack sound and image (Itavi) on farm and in transport; the farm and transport sensors in the ranking below.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="head"><h3>C. What "validated" means here</h3><span class="pill good">Verified</span></div>
+      <p>The project's own bar (D2.2) is agreement with a trained human scorer: a correlation above 0.75, or accuracy, sensitivity and specificity stated and adequate. Against that bar, three aWISH-period results are peer-reviewed: ChickenCheck footpad (κ 0.70) and hock burn (κ 0.60), Weight-Detect on farm, and Lesion-Detect lungs. Everything else on the pig slaughter line is preliminary.</p>
+      <ul>
+        <li>The Final Event slides (annual meeting of the European Federation of Animal Science, EAAP, Hamburg, 10 Sep 2026) add two warnings. CLK's tail-length method had a mean error of 1.63 cm at the Austrian plant it was trained on and "external validation has failed" at the Dutch plant (mean error 2.88 cm, limits of agreement about ±7 cm against a ±2 cm bar). BlinkAI could not read more than half of 3,765 pigs and flagged 68 positives where human checks found 30.</li>
+        <li>No controlled study we found links a camera score plus a consequence to a lesion reduction. The effect sizes used in section 4 are borrowed from national before-and-after data.</li>
+        <li>Authorities' stated barrier to acting on automated scores is lack of external validation (the Dutch food safety authority, NVWA). That is the opening for an independent validation body, and the reason the pig results in Q6 matter more than any other open question.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 3 RANKING -->
+<section id="ranking">
+  <h2><span class="num">3</span>The technology ranking</h2>
+  <p class="read">A weighted-factor model (WFM) over the 19 technologies aWISH tested, ranking the 18 still held by someone by how much a successor should care about each. Seven factors, 0–10. The base weights are derived from a meta-model rather than set by hand; two alternative weightings test robustness. Built with Claude. The 0–10 scores are judgements drafted from the handover packs.</p>
+
+  <div class="surface">
+    <p><b>Read it this way.</b> ChickenCheck footpad and hock burn ranks first because it is the only row with a 10 on both action link (the mandate in Germany's QS scheme, Qualität und Sicherheit, and Dutch and French schemes) and prevalence, and the gap is policy reach, not the technology. PigInspector and the UAB tail camera are the two pig rows that stay in the top four under every weighting. The ranking is not fully robust: under tractability-heavy weights STREMODO comes first and ChickenCheck drops to eighth, because STREMODO has an institute holder and nobody else wants it.</p>
+    <p><b>What it leaves out on purpose.</b> Species scale. The EU slaughters about 6.3 billion broilers a year against 222 million pigs (primer A), and the model uses species only as a sort key. The cost-effectiveness estimate in section 4 is where animal numbers enter, and they dominate it.</p>
+  </div>
+
+  <div class="tbl"><table>
+    <tr><th class="n">#</th><th>Technology</th><th>Holder</th><th class="n">Base</th><th>Conclusion</th></tr>
+    <tr class="top"><td class="n">1</td><td><b>ChickenCheck footpad and hock burn</b></td><td>CLK</td><td class="n">6.71</td><td><span class="pill acc">Push through policy</span></td></tr>
+    <tr class="top"><td class="n">2</td><td><b>PigInspector</b></td><td>CLK</td><td class="n">6.21</td><td><span class="pill warn">Watch</span> pending the pig results (Q6)</td></tr>
+    <tr><td class="n">3</td><td>EBENE app (Itavi's on-farm welfare scoring app)</td><td>Itavi</td><td class="n">5.78</td><td><span class="pill hold">Leave</span> already free and open; gated</td></tr>
+    <tr class="top"><td class="n">4</td><td><b>UAB tail camera</b></td><td>UAB with Batallé</td><td class="n">5.54</td><td><span class="pill good">Pick up</span> if the code is published</td></tr>
+    <tr><td class="n">5</td><td>BlinkAI stunning sensor</td><td>Nuna Solutions</td><td class="n">5.25</td><td><span class="pill acc">Push through policy</span> stunning checks under Regulation 1099/2009</td></tr>
+    <tr><td class="n">6</td><td>STREMODO</td><td>FBN</td><td class="n">4.75</td><td><span class="pill warn">Watch</span> no scheme acts on a lairage index</td></tr>
+    <tr><td class="n">7</td><td>ChickenCheck Catch Damage</td><td>CLK</td><td class="n">4.70</td><td><span class="pill warn">Watch</span> no validation; gated</td></tr>
+    <tr><td class="n">8</td><td>Lesion-Detect</td><td>Innotech Vision</td><td class="n">4.47</td><td><span class="pill hold">Leave</span></td></tr>
+    <tr><td class="n">9</td><td>ChickenCheck Scratch</td><td>CLK</td><td class="n">4.45</td><td><span class="pill hold">Leave</span></td></tr>
+    <tr><td class="n">10</td><td>AI4Animals handling CCTV</td><td>Deloitte</td><td class="n">3.89</td><td><span class="pill hold">Leave</span></td></tr>
+    <tr><td class="n">11</td><td>EBroilerTrack Image</td><td>Itavi</td><td class="n">3.85</td><td><span class="pill hold">Leave</span></td></tr>
+    <tr><td class="n">12</td><td>EBroilerTrack Sound</td><td>Itavi</td><td class="n">3.76</td><td><span class="pill warn">Watch</span> Itavi's plans (Q9)</td></tr>
+    <tr><td class="n">13</td><td>Transport sensors and heat-stress model</td><td>Itavi</td><td class="n">3.35</td><td><span class="pill warn">Watch</span> (Q9)</td></tr>
+    <tr><td class="n">14</td><td>IGF-BP (insulin-like growth factor binding protein) stress assay</td><td>FBN</td><td class="n">3.35</td><td><span class="pill hold">Leave</span></td></tr>
+    <tr><td class="n">15</td><td>Tear-staining camera</td><td>ILVO</td><td class="n">3.32</td><td><span class="pill hold">Leave</span></td></tr>
+    <tr><td class="n">16</td><td>Animal Sense barn climate</td><td>Bit Gear</td><td class="n">2.99</td><td><span class="pill hold">Leave</span></td></tr>
+    <tr><td class="n">17</td><td>Weight-Detect</td><td>PLF Agritech</td><td class="n">2.89</td><td><span class="pill hold">Leave</span></td></tr>
+    <tr><td class="n">18</td><td>Enviro-Detect</td><td>PLF Agritech</td><td class="n">2.14</td><td><span class="pill hold">Leave</span></td></tr>
+    <tr><td class="n">–</td><td>Broiler stunning crate camera</td><td>none (WEL2BE in liquidation)</td><td class="n">–</td><td><span class="pill hold">Dropped</span> scored, not ranked: discontinued; gated</td></tr>
+  </table></div>
+  <p class="src">Base = base weights, 0–10. Gates: no "pick up" if evidence is 0, tractability 0–1, or the technology is already open. From the ranking workbook (not submitted; available on request). Lesion-Detect's evidence score was set before its peer-reviewed validation (Agronomy Research, May 2026); with it, the row would rank higher.</p>
+
+  <details><summary>The seven factors and the three weightings</summary><div class="inner">
+    <div class="tbl"><table>
+      <tr><th>Factor</th><th class="n">Base</th><th class="n">Welfare-heavy</th><th class="n">Tractability-heavy</th><th>What it asks</th></tr>
+      <tr><td>Severity</td><td class="n">20.5</td><td class="n">20</td><td class="n">8</td><td>How bad is what the indicator detects, for the animal that has it?</td></tr>
+      <tr><td>Tractability</td><td class="n">18.2</td><td class="n">15</td><td class="n">30</td><td>Can a nonprofit actually reach it: holder, licence, product or prototype?</td></tr>
+      <tr><td>Action link</td><td class="n">16.4</td><td class="n">15</td><td class="n">7</td><td>Does a law, certifier rule or payment scheme act on the output?</td></tr>
+      <tr><td>Evidence</td><td class="n">15.0</td><td class="n">15</td><td class="n">20</td><td>Does it agree with human scoring, and is it linked to a welfare outcome?</td></tr>
+      <tr><td>Prevalence</td><td class="n">12.7</td><td class="n">12</td><td class="n">5</td><td>How many of the animals the sensor sees have the problem?</td></tr>
+      <tr><td>Counterfactual gap</td><td class="n">11.4</td><td class="n">15</td><td class="n">27</td><td>How likely is it to be dropped without a successor?</td></tr>
+      <tr><td>Coverage</td><td class="n">5.9</td><td class="n">8</td><td class="n">3</td><td>What share of a chain's animals does the sensor see at commercial speed?</td></tr>
+    </table></div>
+    <p>The base weights are each factor's meta-model total minus a cut line of 6.0, normalised to 100. The cut line is a choice: at 6.55 coverage nearly disappears and severity reaches 24. Encapsulation, how much of an animal's welfare the indicator stands for, is the one idea in Aaron Boddy's own metric model that this one leaves out.</p>
+  </div></details>
+
+  <details><summary>Why the top rows rank where they do</summary><div class="inner">
+    <p><b>ChickenCheck footpad and hock burn.</b> On sale since 2011 with competitors, peer-reviewed, and both Plukon plants in the project (DUC in France and Sieradz in Poland) likely to keep it. We estimate that about a quarter of EU broilers (range 16–41 %) are camera-scored for footpad today, almost all in Germany and the Netherlands, and about 14 % (8–22 %) have a camera score with a consequence for the grower. Diffusion follows rules, not hardware: Denmark installed cameras and still scores by hand.</p>
+    <p><b>PigInspector.</b> High severity, prevalence and coverage, and the pig system a founder is most likely to meet again because CLK sells it. In aWISH it was a prototype (TRL 5) with the algorithm still under development in September 2025. No peer-reviewed aWISH validation; tail length failed external validation at the second plant.</p>
+    <p><b>UAB tail camera.</b> Turns on one question to UAB. The Data Management Plan (DMP) commits research-side code and datasets to publication with the methodology paper, but no code or dataset has been found, and the preliminary F-scores are 55 on seven classes and 76 on four. Published code and the 1,542 labelled images would lift tractability; a refusal would drop it.</p>
+    <p><b>BlinkAI.</b> A 10 on severity and coverage, but a technology that will exist without a successor and that could not read half the pigs in its validation run. Policy, through stunning checks under Regulation 1099/2009, could make it matter.</p>
+    <p><b>STREMODO.</b> The only pig slaughterhouse sensor with both pre-aWISH evidence (r 0.78–0.87 against six experts) and an institute holder, which makes it the pig technology most likely to be licensed to a nonprofit. But no scheme acts on its index, it has no payer, and AI4Animals' "audio analytics / stress calls" feature may already cover lairage sound at Vion.</p>
+  </div></details>
+</section>
+
+<!-- 4 COST-EFFECTIVENESS -->
+<section id="ce">
+  <h2><span class="num">4</span>What the top three are worth per dollar</h2>
+  <p class="read">A back-of-the-envelope cost-effectiveness estimate for a $1M programme built around each of the top three technologies, in the unit used by Ambitious Impact (AIM), suffering-adjusted days (SADs) averted per US dollar. Built with Claude on top of the ranking and a SADs model. Every input for which AIM has given an estimate is set to AIM's value: the discount rate (3.5 % for suffering, 6.4 % for money), the tail-biting durations, the whole-life skin-wound rows for pigs and AIM's broiler conventions. AIM review pending. The central figures and the step table are in the short workbook submitted with this page; the intervals and every share of simulations come from the full model, which is not submitted and is available on request. The big figure is the central estimate (every input at its central value); the range under it is the 90 % interval, the 5th to 95th percentile of 20,000 simulations.</p>
+
+  <div class="figs">
+    <div><div class="k">ChickenCheck footpad and hock burn</div><div class="v">65 <small>SADs per $</small></div><div class="s">90 % interval 3.9 to 350; median 47. A policy and certification play on broilers.</div></div>
+    <div><div class="k">PigInspector</div><div class="v">3.4 <small>SADs per $</small></div><div class="s">90 % interval 0.044 to 12; median 1.3. The same play on pigs, behind a validation gate.</div></div>
+    <div><div class="k">UAB tail camera</div><div class="v">0.035 <small>SADs per $</small></div><div class="s">90 % interval 0.00085 to 0.13; median 0.014. An open-technology play with two technical gates.</div></div>
+  </div>
+
+  <div class="surface">
+    <p><b>Trust the ratios more than the levels.</b> ChickenCheck beats PigInspector in 97 % of paired simulations, by a median of about 36 times, and the UAB camera in essentially all of them (full model). The gap is animal numbers and cost per animal, not suffering per animal: a pig brought under a consequence gains about 2.8 times what a bird does, but there are 6.3 billion broilers against 222 million pigs a year, one camera line covers about 48 million birds against 1.5 million pigs, and the pig cameras have not yet passed a validation gate. The levels rest on probabilities with limited empirical anchoring.</p>
+    <p><b>The founder's money buys the consequence, not the camera.</b> In all three chains the result is carried by how much a programme raises the probability that a law, a scheme rule or a contract clause attaches a consequence to the slaughter score. The camera is shipped; what is missing is a sanction that is actually applied, which about 80 % of EU broilers sit outside today.</p>
+    <p><b>Only the broiler programme is in the range funders act on.</b> AIM's bar is 11 SADs per $ (Aaron Boddy, AIM, 4 Nov). The ChickenCheck programme clears it in 84 % of the simulations, PigInspector in 6 %, the UAB camera in none (full model). AIM moved toward disaggregated pain-hours in April 2026, so pain-hours by category sit beside the scaled figure in the full model.</p>
+  </div>
+
+  <details><summary>How the number is built, step by step</summary><div class="inner">
+    <p>One chain per technology, the same nine steps, with the technology entering at steps 1, 5 and 6. The worked example is ChickenCheck at $1M with central inputs.</p>
+    <div class="tbl"><table>
+      <tr><th class="n">Step</th><th>What it is</th><th>ChickenCheck, central</th></tr>
+      <tr><td class="n">1</td><td>SADs averted per animal per year once the slaughter score drives a consequence for the grower: prevalence × pain-hours × AIM's pain weights × the reduction seen where a consequence exists (Denmark, Sweden, the Netherlands), discounted for confounding</td><td>0.062 per bird</td></tr>
+      <tr><td class="n">2</td><td>Animals per year not yet under an effective consequence (27 member states classified)</td><td>5.0 bn birds (80 %)</td></tr>
+      <tr><td class="n">3</td><td>The EU prize per year, 1 × 2</td><td>312 M SADs</td></tr>
+      <tr><td class="n">4</td><td>When the consequence would apply without the programme, and how much earlier with it; benefits discounted at AIM's 3.5 % a year</td><td>EU clause year 7 → 6.5; national scheme year 4 → 3; retailer clause year 3 → 2</td></tr>
+      <tr><td class="n">5</td><td>Technology gate: what has to go right technically</td><td>1.0 (shipped, peer-reviewed); 0.7 for PigInspector's validation; 0.5 × 0.4 for the UAB camera's code release and accuracy</td></tr>
+      <tr><td class="n">6</td><td>Net of side effects and gaming</td><td>1.0; 0.85 for pigs, since a lesion malus can push more tail docking</td></tr>
+      <tr><td class="n">7</td><td>Per lever: probability it lands without the programme → with it, × share of the uncovered pool it reaches × the share of the full effect reached on average over the credited years (growers take time to respond and enforcement is uneven). The national and retailer levers count only for the years before the EU clause would cover the same birds</td><td>EU clause 25 → 29 % × 0.50 × 0.7; national scheme 10 → 15 % × 0.14 × 0.7; retailer clause 15 → 30 % × 0.04 × 0.7</td></tr>
+      <tr><td class="n">8</td><td>Expected SADs averted, present value, summed over levers</td><td>40.8 M + 13.3 M + 7.4 M = 61.5 M</td></tr>
+      <tr><td class="n">9</td><td>Divide by the tier in present value (spent evenly over three years, discounted at AIM's 6.4 % for money)</td><td>61.5 M ÷ $941,000 = 65 per $</td></tr>
+    </table></div>
+    <p>The programme is credited with the difference between the world with it and the world without it. A lever that lands anyway earns only the years the programme brings it forward. With acceleration switched off (every year brought forward set to zero), the ChickenCheck figure is 46; acceleration alone, with every probability gain at zero, gives 15, above AIM's bar (full model).</p>
+  </div></details>
+
+  <details><summary>Diminishing returns by tier, and the all-in cost (full model)</summary><div class="inner">
+    <div class="tbl"><table>
+      <tr><th>Tier</th><th class="n">$10k</th><th class="n">$100k</th><th class="n">$1M</th><th class="n">$10M</th></tr>
+      <tr><td>ChickenCheck, central SADs per $</td><td class="n">≈140</td><td class="n">108</td><td class="n">65</td><td class="n">15</td></tr>
+    </table></div>
+    <p>The $10k figure is an artefact of a huge lever and a tiny, unfalsifiable probability gain; its real product is information (does the clause have a sponsor?). The $10M tier cannot absorb the money in policy and is mostly validation and data; at 15 it sits just above AIM's bar of 11 and clears it in 49 % of simulations. Adding what plants pay for cameras over the credited years cuts the $1M figure to about 43; crediting the camera only with its marginal share over manual scoring (Sweden and Denmark achieved their declines by hand) gives 20. PigInspector's $100k tier (7.9) is the only pig figure that clears the bar in a meaningful share of simulations (21 %).</p>
+  </div></details>
+
+  <details><summary>How it could be wrong, largest first</summary><div class="inner">
+    <ul class="plain">
+      <li><b>The counterfactual inputs have limited empirical anchoring.</b> How likely each lever is to land anyway, how much the money raises that, and how many years it brings the date forward are calibrated mainly to each other and to precedent rather than to data.</li>
+      <li><b>The effect sizes are borrowed.</b> No controlled study links camera scores plus a consequence to lesion reductions; the broiler figure rests on confounded national before-and-after data, the pig figure on the broiler one by analogy.</li>
+      <li><b>Attribution.</b> Eurogroup for Animals, Compassion in World Farming (CIWF) and the Royal Society for the Prevention of Cruelty to Animals (RSPCA) already lobby the broiler revision. Whether a new organisation adds an increment, or should hand them the evidence, is not known.</li>
+      <li><b>Execution risk is folded into the probabilities,</b> not modelled. Funging and leverage are ignored.</li>
+      <li><b>The pig figure rests on one input chain.</b> 91 % of PigInspector's figure is skin wounds: AIM's whole-life skin-wound row (one staff estimate citing older Welfare Footprint modelling) times our own estimate of the share a slaughter-line consequence can reach (0.5).</li>
+      <li><b>AIM's tail-biting durations make tail docking look good.</b> Under them, docking lowers tail-related suffering about three times, against EU law (Directive 2008/120/EC) and the advocacy position. The pig figures use AIM's durations and should not be read as a view on docking.</li>
+      <li><b>The pig gates are judgements about unpublished results</b> (Q6). Footpad pain-hours are our own estimate (AIM has no footpad row; Welfare Footprint folds it into lameness); the pig tail and skin rows are AIM's.</li>
+      <li><b>Do not add the two pig figures.</b> Both rely on the same consequence and would count the same suffering twice.</li>
+    </ul>
+    <p>What would improve the estimate most: AIM's pain-hours for broiler contact dermatitis, the source of AIM's tail-biting durations and the discount rate behind its bar of 11; the final results of aWISH's six pilots (work package 3, WP3) in place of the pig gates once Q6 is answered; a second rater for the probability inputs.</p>
+  </div></details>
+</section>
+
+<!-- 5 SHAPES -->
+<section id="shapes">
+  <h2><span class="num">5</span>Two shapes, costed, and the case for none</h2>
+  <p class="read">We drafted five successor shapes at four funding tiers. Fed with the ranking and the arithmetic above, two survive as something to cost: a policy play as the lead, and a custodian as the cheap floor that carries the open-technology ask. The other three get a line each. All costs are estimates.</p>
+
+  <div class="cards two">
+    <div class="card">
+      <div class="head"><h3>Lead: the policy play</h3><span class="pill acc">Shape C</span></div>
+      <p>Use aWISH's evidence and network to get certifiers, retailers and authorities to write automated, animal-based slaughter-line indicators into standards and law. The two rows that justify it are ChickenCheck footpad and hock burn, and BlinkAI through stunning checks.</p>
+      <ul>
+        <li><b>The window.</b> The EU Livestock Strategy of 7 July 2026 (COM(2026) 576, Action 16) promises a targeted revision of the rules for laying hens and broilers by end-2026, with practical on-farm welfare indicators. The ask: harmonised footpad and hock scoring at slaughter for all flocks, validated automated systems accepted as a method, mandatory feedback to growers, graduated consequences. The strategy puts the pigs proposal in April–June 2027. The Commission's work programme for 2027 (COM(2026) 710, 4 Nov 2026) lists no animal-welfare initiative. The poultry proposal could come in December 2026, before that programme starts; the pigs proposal's date falls inside it. Scoping the timing and who carries each file needs more work.</li>
+        <li><b>$100k buys it.</b> A half-time policy lead hosted by Eurogroup or another EU non-governmental organisation (NGO); $80–150k a year for one full-time equivalent (FTE). First year: a vendor-neutral indicator annex for one private standard (QS as template, Beter Leven or RSPCA Assured as target), feed the Dutch camera bill's criteria, brief the Commission's Directorate-General for Health and Food Safety (DG SANTE).</li>
+        <li><b>$1M adds a second person and one commissioned validation study,</b> plus a certifier pilot writing automated scoring into one label with Plukon's two ChickenCheck plants as reference sites, and a retailer outcome-measure clause with one continental retailer.</li>
+        <li><b>$10k buys one well-timed intervention:</b> a response to the Commission's pigs consultation and one evidence note from the published broiler figures into the broiler revision, plus a meeting each with QS, RSPCA Assured and Dierenbescherming. On the arithmetic in section 4 this tier scores highest, about 140 SADs per $, but that is an artefact of a huge lever and a tiny probability gain that's hard to falsify. Our view: $10k buys information (does the clause have a sponsor, will a certifier cite a standard?), not impact, and its real cost-effectiveness is whatever it does to the $100k decision.</li>
+      </ul>
+      <p><b>Strongest objection.</b> Eurogroup already runs this policy line (2021 position paper, 2023 white paper) and CIWF and RSPCA lobby the same file, so a new organisation may add little beyond handing them the evidence. The pig loop is already proceeding commercially into QS without independent validation, so the ask rests on broiler evidence alone until Q6's answer surfaces. Whether the consortium's exploitation plan already assigns policy follow-up to Eurogroup is Q3.</p>
+    </div>
+
+    <div class="card">
+      <div class="head"><h3>Floor: the custodian</h3><span class="pill acc">Shape A</span></div>
+      <p>Keep aWISH's relationships, catalogue, training material and platform knowledge warm and documented for 12–24 months, so a founder arriving in 2027 restarts from a live network rather than from zero. It fits the hypothesis that a successor is a custodian of relationships more than of a codebase. It is also where the one "pick up" conclusion from section 3 lives: the custodian asks UAB and Batallé to publish the tail camera's code and labelled images, and if they do, finds a home for extending the tool.</p>
+      <ul>
+        <li><b>$10k</b> buys keeping this handover current (the data contacts and the per-pilot asks) with 100–150 volunteer hours a year: a quarterly check-in with ILVO's exploitation lead and the six pilot co-leads, one refresh of the handover material at 12 months, and mirroring the deliverables still to land (among them D1.3, D1.7, D6.4 and the final WP3 results).</li>
+        <li><b>$100k</b> buys a 0.4–0.5 FTE custodian inside an existing entity (an engineering consultancy, an EU NGO, or an academic host), custody of the domain, catalogue and e-course alongside BioSense, a yearly visit per pilot, and a read-only platform snapshot if Q1 comes back positive. Estimate: $60–90k a year, 0.5 FTE plus hosting and travel.</li>
+        <li><b>Biggest dependency:</b> a founder candidate by mid-2027. Without one, custody has been paid for nothing. The two precedents, the Welfare Quality Network after its EU funding (the Sixth Framework Programme) ended and the European Association for Precision Livestock Farming (EA-PLF) as custodian of the EU-PLF project's blueprint, both decayed into a frozen website.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>The three shapes that get a line</h3>
+  <ul class="lines">
+    <li><b>Data and epidemiology service (Shape B).</b> Pool per-batch welfare data from cooperating plants and publish anonymised statistics. $300–600k a year at the $1M tier. Likely to fail due to data access: no pilot data is committed to open deposit, the DMP says all data remains private, and Germany, the Netherlands and Denmark already run closed national loops. However, a potential partner company already analysing slaughterhouse data has been identified and contacted. It has offered potential hosting of a successor project with this shape, depending on particulars. Contact available upon request.</li>
+    <li><b>Open technology (Shape D).</b> Rebuild or license slaughter-line sensors under an open licence. $600k–1.2M a year for one open sensor at one plant. The IP it would inherit is almost entirely blocked, and for broiler footpad it would re-create products already at TRL 9.</li>
+    <li><b>Validation and outcome-data standards body (Shape E).</b> An independent body that validates commercial systems and publishes a welfare-outcome data standard that certifiers and authorities can cite. $10k buys a v0.1 standard on Zenodo from volunteer hours; real validation studies start at $1M. The demand is on record (NVWA finds most systems lack external validation; QS names no accuracy threshold), but no one has yet asked a certifier whether it would cite one, and it depends on Q6 above all. It is where the $1M policy play's validation study points.</li>
+  </ul>
+
+  <h3>No successor</h3>
+  <div class="surface">
+    <p>A real option, and one that seems more promising if three conditions come back negative:</p>
+    <ul class="plain">
+      <li>the pig results in Q6 do not support a validated pig indicator</li>
+      <li>no pilot keeps its kit (Q4)</li>
+      <li>the data cannot move (Q2)</li>
+    </ul>
+    <p>Commercial vendors and national schemes already carry broilers, stunning and handling CCTV regardless. What would then be lost is narrow: the pig lesion work, lairage sound, tear staining, the network and the cross-chain feedback loop. The cost is $0, with the European Commission and BioSense carrying the public record. This is the default outcome.</p>
+  </div>
+</section>
+
+<!-- 6 HANDOFF -->
+<section id="handoff">
+  <h2><span class="num">6</span>Handoff list</h2>
+  <p class="read">What a founder inherits as open work: nine questions for the consortium, a watch list with triggers, and the regulatory calendar. Asks are for information, never for data, access or commitments.</p>
+
+  <h3>The nine questions</h3>
+  <div class="tbl"><table>
+    <tr><th class="n">#</th><th>Question</th><th>Status</th><th>Route</th></tr>
+    <tr><td class="q">Q6</td><td><b>Which final deliverables carry the pig validation results, and will they be public?</b> The most important question; every shape except "no successor" depends on it.</td><td><span class="pill warn">Asked, no reply</span></td><td>The consultant who proposed the successor, 12 Oct; two ILVO researchers, 27 Oct and 4 Nov (names on request)</td></tr>
+    <tr><td class="q">Q8</td><td>Who holds the list of per-partner data contacts, and will it be in DMP v3?</td><td><span class="pill warn">Asked, no reply</span></td><td>Same</td></tr>
+    <tr><td class="q">Q1</td><td>Platform stack, code owner, who pays cloud storage, what still feeds it</td><td><span class="pill hold">Partly answered from documents</span></td><td>Held for an ILVO call</td></tr>
+    <tr><td class="q">Q2</td><td>What the 32 Data Sharing Agreements let a third party receive; the two restricted Zenodo records (ILVO tear staining; slaughter-line indicators from the University of Veterinary Medicine Vienna)</td><td><span class="pill hold">Partly answered; Zenodo terms asked 4 Nov</span></td><td>ILVO</td></tr>
+    <tr><td class="q">Q3</td><td>Exploitation plan: headline terms, whether policy follow-up is already assigned, whether a successor has been discussed</td><td><span class="pill hold">Open, not asked</span></td><td>ILVO</td></tr>
+    <tr><td class="q">Q4</td><td>Per pilot: does the kit stay, who pays, named contact</td><td><span class="pill hold">Open, not asked</span></td><td>Pilot co-leads via ILVO</td></tr>
+    <tr><td class="q">Q5</td><td>Research or nonprofit licence per vendor</td><td><span class="pill hold">Open; needs an entity with standing</span></td><td>Vendors, later</td></tr>
+    <tr><td class="q">Q7</td><td>Who holds the BlinkAI IP; tear-staining terms</td><td><span class="pill hold">Open, not asked</span></td><td>Nuna, ILVO</td></tr>
+    <tr><td class="q">Q9</td><td>Itavi's plans for the transport model and EBroilerTrack Sound; an intro to Itavi</td><td><span class="pill hold">Open, not asked</span></td><td>ILVO</td></tr>
+  </table></div>
+  <p class="src">The Route column names who could settle each question. The consortium had replied to none of them by 10 Nov.</p>
+
+  <h3>Watch list and triggers</h3>
+  <div class="tbl"><table>
+    <tr><th>Row</th><th>Trigger that changes the conclusion</th><th>Then</th></tr>
+    <tr><td>PigInspector</td><td>The WP3 results (Q6) show scheme-grade accuracy for skin, ear or tail lesions at a second plant</td><td>Move from "watch" to the pig policy play; commission no validation of your own</td></tr>
+    <tr><td>UAB tail camera</td><td>UAB and Batallé publish the code and the 1,542 labelled images</td><td>The custodian's one engineering task: extend and validate it as the open reference method</td></tr>
+    <tr><td>STREMODO</td><td>A scheme acts on a lairage vocalisation index, or AI4Animals' audio feature is confirmed in use at Vion</td><td>Either pick up with FBN, or leave for good</td></tr>
+    <tr><td>BlinkAI</td><td>A published accuracy figure, or the IP holder named (Q7)</td><td>Pair with the stunning-check ask under Regulation 1099/2009</td></tr>
+    <tr><td>ChickenCheck Catch Damage</td><td>Any validation figure</td><td>Add to the broiler policy ask</td></tr>
+    <tr><td>EBroilerTrack Sound, transport model</td><td>Itavi's plans (Q9)</td><td>Leave unless Itavi wants a partner</td></tr>
+    <tr><td>Data platform</td><td>UBITECH announces a shutdown date, or a pilot keeps feeding it</td><td>Ask the engineering consultancy from Shape A about a read-only snapshot (Q1)</td></tr>
+  </table></div>
+
+  <h3>The regulatory calendar</h3>
+  <ul class="plain">
+    <li><b>5 Nov 2026:</b> the German Bundestag adopted video surveillance in about 232 plants (CDU/CSU and SPD for; AfD and Greens against; Die Linke abstained). The law has no AI clause and no indicator duty, and a Green resolution asking for mandatory AI evaluation was rejected. In force 1 January 2027; the camera duty applies a year later.</li>
+    <li><b>End-2026:</b> the Commission's targeted revision of the broiler rules (COM(2026) 576, Action 16). The main window for the policy play.</li>
+    <li><b>April–June 2027:</b> the Commission's pigs proposal and consultation, as promised in the Livestock Strategy. The 2027 work programme (COM(2026) 710, 4 Nov 2026) does not list it.</li>
+    <li><b>Ongoing:</b> the Dutch camera bill, the only text that expressly contemplates prescribing AI analysis; Beter Leven already requires cameras with microphones and Dierenbescherming asked in 2024 for AI that flags risk sounds; QS guideline revisions land on 1 January each year.</li>
+  </ul>
+
+</section>
+
+<!-- 7 VERIFICATION -->
+<section id="verification">
+  <h2><span class="num">7</span>Verification and AI use</h2>
+  <p class="read">AI tools did much of the extraction and drafting behind this page. Every claim on it has been checked by a person against its source, as the Sentient Futures AI-use policy requires.</p>
+  <div class="surface">
+    <p><b>Checked against sources:</b> every claim, figure and citation on this page, 135 in all, each against the passage and page it rests on; a log, published with packs A and B (section 8), records the source and the verdict for each. In the short cost-effectiveness workbook, every formula and every input.</p>
+    <p><b>Labelled as estimates:</b> the detailed cost, probability and timing figures in sections 4 and 5, the 0–10 ranking scores, and the licence and continuation reads. No source can settle these; the page says so where they appear.</p>
+    <p><b>Not submitted, available on request:</b> the full cost-effectiveness model (its simulations and the other funding tiers), the ranking workbook, the vault and handover packs C to S. They are AI extractions and drafts that have not been checked claim by claim.</p>
+    <p><b>How the AI was used.</b> Sub-agents extracted the handover packs from the public deliverables. Claude built the vault from the packs and drafted the ranking scores, the SADs model, the cost-effectiveness chain and this page. Claude also built the tool used for the verification, which shows each claim beside its source page, and looked up the passage each claim rests on. I set the scope, the questions, the factors and weights, the model's conventions and the outreach, and did the verification.</p>
+  </div>
+  <h3>AI-use statement</h3>
+  <div class="surface">
+    <p><b>Tools.</b> Claude (Anthropic), in the Claude app and Claude Code, including sub-agents and its web search and fetch tools; Gemini (Google) meeting notes for one call.</p>
+    <p><b>Used for.</b> Literature and web search; extracting facts from the aWISH deliverables into the handover packs; drafting the vault notes, the ranking scores, the SADs and cost-effectiveness model, its code and the short workbook, and the text of this page; a tool that shows each claim beside its source page; looking up the source passage for each claim.</p>
+    <p><b>Not delegated.</b> The scope, the questions, the ranking factors and weights, the model's conventions and the outreach are mine. AI is not an author of this work.</p>
+    <p><b>Third-party material.</b> The cost-effectiveness inputs include values from AIM's SADs v.2 sheets, which AIM staff shared with me and which I gave to Claude to read.</p>
+    <p><b>Human verification.</b> I checked every claim, figure and citation on this page against its source, and every formula and input in the short workbook.</p>
+  </div>
+</section>
+
+<!-- 8 INDEX -->
+<section id="index">
+  <h2><span class="num">8</span>Where everything is</h2>
+  <p class="read">This page is the summary. The two packs, the workbook and the project's own deliverables hold the evidence; the rest is available on request.</p>
+  <div class="index">
+    <div><div class="t">Handover packs A and B, and the verification logs <span class="pill good">Submitted</span></div><p><a href="https://github.com/OttoTutzHell/awish-handover">github.com/OttoTutzHell/awish-handover</a>: pack A (what has been validated, indicator by indicator), pack B (the six pilot plants), and the logs that record the source, page and verdict for every claim on this page (135) and in the two packs (479).</p></div>
+    <div><div class="t">The short cost-effectiveness workbook <span class="pill good">Submitted</span></div><p><a href="https://docs.google.com/spreadsheets/d/1-Cx6y7wdWo0mXg12MKSzaw0HG6ift-OizY8DP3UPelM/edit">aWISH CEA, short version (central values)</a>, a Google Sheet (also as <code>models/aWISH CEA, short version (central values).xlsx</code>): steps 2 to 9 of section 4's step table for the three technologies at the $1M tier, central values, live formulas. Step 1, the suffering averted per animal, comes from the full model's per-animal layer.</p></div>
+    <div><div class="t">The deliverables <span class="pill good">Primary</span></div><p>The public aWISH deliverables on CORDIS (the EU's research results database) and the project website, the Final Event slides (EAAP, 10 Sep 2026) and the papers, cited by their digital object identifiers (DOIs). The thing to check against.</p></div>
+    <div><div class="t">Available on request <span class="pill hold">Not submitted</span></div><p>The full cost-effectiveness model with its simulations, the ranking workbook, the vault (about 140 notes), handover packs C to S, the post-project asset register and the handover brief. They are AI extractions and drafts that have not been checked claim by claim.</p></div>
+    <div><div class="t">Left out</div><p>Email addresses, notes about individuals, meeting notes, programme material, AIM's own SADs sheets, and third-party papers (cited by DOI).</p></div>
+  </div>
+</section>
+
+<footer>
+  <p>Figures are as of 11 Nov 2026; the status of the nine questions is as of 10 Nov 2026.</p>
+  <p>Otto Tutzauer Hellström · mentor Aaron Boddy (Ambitious Impact) · successor idea proposed by an outside consultant (name on request).</p>
+</footer>
+</div>
+
+<script>
+(function () {
+  var btn = document.getElementById('toggleAll');
+  var all = Array.prototype.slice.call(document.querySelectorAll('details'));
+  function anyClosed() { return all.some(function (d) { return !d.open; }); }
+  function relabel() { btn.textContent = anyClosed() ? 'Expand all' : 'Collapse all'; }
+  btn.addEventListener('click', function () {
+    var open = anyClosed();
+    all.forEach(function (d) { d.open = open; });
+    relabel();
+  });
+  all.forEach(function (d) { d.addEventListener('toggle', relabel); });
+
+  var links = Array.prototype.slice.call(document.querySelectorAll('nav.toc a'));
+  function mark(id) { links.forEach(function (a) { a.setAttribute('aria-current', a.getAttribute('href') === '#' + id ? 'true' : 'false'); }); }
+  var h = (location.hash || '').replace('#', '');
+  if (h && document.getElementById(h)) { document.getElementById(h).scrollIntoView(); mark(h); }
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) mark(e.target.id); });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    Array.prototype.forEach.call(document.querySelectorAll('section[id]'), function (s) { io.observe(s); });
+  }
+})();
+</script>
+
+
+</body>
+</html>
