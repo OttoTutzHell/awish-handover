@@ -1061,3 +1061,14 @@ D6.3: 23 hits on pp. 5, 6, 7(2), 8(4), 9, 11, 14(4), 16(2), 17, 35, 54, 78, 80, 
 - **G36, D1.8 p.18** — `28 partners               11 countries   6 pilots` (as file B quotes).
 - **G40, D6.3 p.8** — `Currently, 32 signed DSA and 2 ethical approval documents are collected.` (as file B quotes).
 - **G05a, D2.2** — the procedure's example regex `lung|liver` matches the word "Deliverable" in the running header of every D2.2 page; use the word-bounded variant (G05b) or search the PDF for "lung" and "liver" as whole words.
+
+## Update of 19 Nov 2026 (not yet checked)
+
+Text added to packs A and B on 19 Nov from an ILVO researcher's email of 17 Nov 2026 (name on request). The result code is blank until the author has checked it.
+
+| File | Where | Text added | Source | Result code | Date |
+|---|---|---|---|---|---|
+| A | Note 4 | The WP3 deliverable will be public with the main lessons learned; the pig sensor validation is described more fully in D4.2, public; journal papers in preparation, one submitted; neither deliverable out on 19 Nov | ILVO email, 17 Nov 2026 | | |
+| A | Could not find, item 1 | "Where to look next: D4.2 (public, not yet out)" | ILVO email, 17 Nov 2026 | | |
+| A | P16, sources cell | ILVO's restricted tear-staining image set on Zenodo has been withdrawn, partners being reluctant to share images linked to named slaughterhouses | ILVO email, 17 Nov 2026 | | |
+| B | Pilot 5 chronology | Vetmeduni's restricted Zenodo record stays restricted for now; Vetmeduni decides on access (contact on request; asked 19 Nov); tear-staining set withdrawn | ILVO email, 17 Nov 2026; author's email to Vetmeduni, 19 Nov 2026 | | |

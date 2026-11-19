@@ -12,7 +12,7 @@ Everything submitted to the Sentient Futures Project Incubator is in this reposi
 2. **Short cost-effectiveness workbook**: [`models/aWISH CEA, short version (central values).xlsx`](models/), also as a [Google Sheet](https://docs.google.com/spreadsheets/d/1-Cx6y7wdWo0mXg12MKSzaw0HG6ift-OizY8DP3UPelM/edit). The step table in section 4 of the brief, with live formulas.
 3. **Handover pack A**, what has been validated: [`handover-pack/A-what-validated.md`](handover-pack/A-what-validated.md).
 4. **Handover pack B**, the six pilot plants: [`handover-pack/B-per-pilot-sheet.md`](handover-pack/B-per-pilot-sheet.md).
-5. **Verification logs**: [`verification/`](verification/), the source, page and verdict for every claim in the brief (135) and in packs A and B (479). The figures added to packs A and B on 17 Nov (P8 tail length, P10 BlinkAI, Lesion-Detect in Serbia) are the same claims the brief makes, checked in the brief's log as rows F-04, F-05 and P02·F-10.
+5. **Verification logs**: [`verification/`](verification/), the source, page and verdict for every claim in the brief (135) and in packs A and B (479). The figures added to packs A and B on 17 Nov (P8 tail length, P10 BlinkAI, Lesion-Detect in Serbia) are the same claims the brief makes, checked in the brief's log as rows F-04, F-05 and P02·F-10. The changes of 19 Nov (AIM's bar and probability gain; ILVO's answers on D4.2 and the Zenodo records) are listed at the end of the brief's log and await the author's check.
 
 ## What is here
 
