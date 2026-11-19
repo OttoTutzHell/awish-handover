@@ -1064,11 +1064,11 @@ D6.3: 23 hits on pp. 5, 6, 7(2), 8(4), 9, 11, 14(4), 16(2), 17, 35, 54, 78, 80, 
 
 ## Update of 19 Nov 2026 (not yet checked)
 
-Text added to packs A and B on 19 Nov from an ILVO researcher's email of 17 Nov 2026 (name on request). The result code is blank until the author has checked it.
+Text added to packs A and B on 19 Nov, from an ILVO researcher's email of 17 Nov 2026 (name on request). The result code stays blank until the author has checked it.
 
 | File | Where | Text added | Source | Result code | Date |
 |---|---|---|---|---|---|
-| A | Note 4 | The WP3 deliverable will be public with the main lessons learned; the pig sensor validation is described more fully in D4.2, public; journal papers in preparation, one submitted; neither deliverable out on 19 Nov | ILVO email, 17 Nov 2026 | | |
-| A | Could not find, item 1 | "Where to look next: D4.2 (public, not yet out)" | ILVO email, 17 Nov 2026 | | |
-| A | P16, sources cell | ILVO's restricted tear-staining image set on Zenodo has been withdrawn, partners being reluctant to share images linked to named slaughterhouses | ILVO email, 17 Nov 2026 | | |
-| B | Pilot 5 chronology | Vetmeduni's restricted Zenodo record stays restricted for now; Vetmeduni decides on access (contact on request; asked 19 Nov); tear-staining set withdrawn | ILVO email, 17 Nov 2026; author's email to Vetmeduni, 19 Nov 2026 | | |
+| A | Note 4 | The WP3 deliverable will be public and gives the main lessons learned; the pig sensor validation is described in more detail in D4.2, which will also be public; journal papers are in preparation, and one has been submitted | ILVO email, 17 Nov 2026 | | |
+| A | Could not find, item 1 | "Where to look next: D4.2, once published" | ILVO email, 17 Nov 2026 | | |
+| A | P16, sources cell | ILVO has withdrawn its restricted tear-staining image set from Zenodo, because partners are reluctant to share images that identify a slaughterhouse | ILVO email, 17 Nov 2026 | | |
+| B | Pilot 5 chronology | Vetmeduni sets the access terms for its restricted Zenodo record (contact on request; asked 19 Nov); ILVO is still asking partners to share as much as they can, but many are reluctant; ILVO has withdrawn its tear-staining image set | ILVO email, 17 Nov 2026; the author's email to Vetmeduni, 19 Nov 2026 | | |
