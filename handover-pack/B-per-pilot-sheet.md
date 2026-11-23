@@ -1,10 +1,14 @@
+[← Back to README](../README.md) · [Founder Brief (online)](https://ottotutzhell.github.io/awish-handover/founder-brief.html) · [Pack A: Validated sensors](A-what-validated.md) · [Glossary](../GLOSSARY.md)
+
 # B. Per-pilot sheet
 
-aWISH ran six pilots: four slaughterhouses in a first phase and two more in a second phase that served as external validation sites. For each pilot, this pack records what was installed, at which stage of the chain, its last stated status, and what any document says about the time after October 2026. Pack A covers how well each technology has been validated.
+aWISH ran six pilots: four slaughterhouses in a first phase and two more in a second phase that served as external validation sites. For each pilot, this pack records what was installed, at which stage of the chain, its last stated status, and what any document says about the time after October 2026. [Pack A](A-what-validated.md) covers how well each technology has been validated.
+
+**Contents:** [In brief](#in-brief) · [1. Per-pilot overview](#1-per-pilot-overview) · [1b. Data arrangements](#1b-data-arrangements-per-pilot) · [2. Chronology](#2-per-pilot-chronology) · [3. Points marked "not stated"](#3-points-marked-not-stated) · [4. Contradictions between documents](#4-contradictions-and-discrepancies-between-documents) · [Appendix: files read](#appendix-files-read)
 
 ## In brief
 
-- **Six pilots:** four pig slaughterhouses (Vion in the Netherlands, Batallé in Spain, Grossfurtner-Higelsberger in Austria, Carnex in Serbia) and two broiler slaughterhouses (Plukon's DUC in France and Sieradz in Poland).
+- **Six pilots:** four pig slaughterhouses ([Vion](#pilot-1-vion-groenlo-netherlands-pigs) in the Netherlands, [Batallé](#pilot-2-batallé-catalonia-spain-pigs) in Spain, [Grossfurtner-Higelsberger](#pilot-5-grossfurtner-higelsberger-austria-pigs) in Austria, [Carnex](#pilot-6-carnex-vojvodina-serbia-pigs) in Serbia) and two broiler slaughterhouses (Plukon's [DUC](#pilot-3-duc-plukon-food-group-chailley-france-broilers) in France and [Sieradz](#pilot-4-plukon-sieradz-poland-broilers) in Poland).
 - **Nothing public says what happens to any installation after October 2026:** whether the sensors keep running, or who pays for them (§3).
 - **The pilot data are mostly closed:**
 	- Pilot 1's data stay private on the aWISH data platform.
@@ -21,25 +25,25 @@ aWISH ran six pilots: four slaughterhouses in a first phase and two more in a se
 **How to read the citations**
 - Page numbers are PDF page numbers.
 - Sources are footnotes. D5.2 has no text layer and was read through OCR; its footnotes say so and give the printed page number.
-- The deliverables (D1.1, D6.3 and so on) are explained in Pack A, "The sources", and listed with their dates in the [appendix](#appendix-files-read).
+- The deliverables (D1.1, D6.3 and so on) are explained in [Pack A, "The sources"](A-what-validated.md#the-sources), and listed with their dates in the [appendix](#appendix-files-read). Because of copyright restrictions, the deliverables are not uploaded here; download them from the [aWISH project website](https://www.awish-project.eu/) or [CORDIS (grant 101060818)](https://cordis.europa.eu/project/id/101060818).
 - D1.4's pilot descriptions are the project website's texts. D1.4 v1.0 was published 30 Apr 2023 and v2.0 on 17 Sep 2024 ("Adaptation of comments by EC")[^d14-3-4], so these texts date from one of the two. They are cited as "website text".
-- **Q2, Q4, Q5** are open questions for ILVO in the post-project asset register (not published). The numbering is the register's, not that of the founder brief's nine questions.
-	- Q2: what the slaughterhouse agreements permit
-	- Q4: whether the sensors keep running after October, and who pays the vendor
-	- Q5: what each vendor intends
+- **Q2, Q4, Q5** refer to the open handoff questions in Section 6 of the [Founder Brief](https://ottotutzhell.github.io/awish-handover/founder-brief.html#handoff):
+	- **Q2:** what the 32 Data Sharing Agreements let a third party receive
+	- **Q4:** per pilot, whether the kit stays running after October 2026, who pays, and named contact
+	- **Q5:** research or nonprofit licence terms per vendor
 
 ---
 
 ## 1. Per-pilot overview
 
-| Pilot | Slaughterhouse (country)               | Species  | Phase | Scientific co-lead | New technologies (vendor)                                                                                                                                        |
-| ----- | -------------------------------------- | -------- | ----- | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1     | Vion, Groenlo (NL)                     | Pigs     | 1st   | Utrecht University | PigInspector (CLK); STREMODO and IGF-BP blood assay (FBN)                                                                                                        |
-| 2     | Batallé, Catalonia (ES)                | Pigs     | 1st   | UAB                | Stunning effectiveness (Nuna Solutions, listed as WEL2BE); tear staining (ILVO, listed as WEL2BE); Lesion-Detect, Weight-Detect, Enviro-Detect (InnoTech Vision) |
-| 3     | DUC (Plukon Food Group), Chailley (FR) | Broilers | 1st   | Itavi              | Broiler stunning (WEL2BE); ChickenCheck Footpad and Hockburn (CLK); EBroilerTrack Sound and Image, EBENE app, transport sensors (Itavi)                          |
-| 4     | Plukon, Sieradz (PL)                   | Broilers | 1st   | IGBZ PAN           | ChickenCheck Footpad, Hockburn, Catch Damage, Scratch (CLK); EBENE app (Itavi)                                                                                   |
-| 5     | Grossfurtner-Higelsberger (AT)         | Pigs     | 2nd   | VetMedUni Vienna   | PigInspector (CLK); stunning effectiveness and tear staining planned                                                                                             |
-| 6     | Carnex, Vojvodina (RS)                 | Pigs     | 2nd   | BioSense Institute | Animal Sense (Bit Gear); STREMODO, Lesion-Detect, Enviro-Detect planned                                                                                          |
+| Pilot | Slaughterhouse (country) | Species | Phase | Scientific co-lead | New technologies (vendor) |
+|---|---|---|---|---|---|
+| [1](#pilot-1-vion-groenlo-netherlands-pigs) | Vion, Groenlo (NL) | Pigs | 1st | Utrecht University | PigInspector (CLK); STREMODO and IGF-BP blood assay (FBN) |
+| [2](#pilot-2-batallé-catalonia-spain-pigs) | Batallé, Catalonia (ES) | Pigs | 1st | UAB | Stunning effectiveness (Nuna Solutions, listed as WEL2BE); tear staining (ILVO, listed as WEL2BE); Lesion-Detect, Weight-Detect, Enviro-Detect (InnoTech Vision) |
+| [3](#pilot-3-duc-plukon-food-group-chailley-france-broilers) | DUC (Plukon Food Group), Chailley (FR) | Broilers | 1st | Itavi | Broiler stunning (WEL2BE); ChickenCheck Footpad and Hockburn (CLK); EBroilerTrack Sound and Image, EBENE app, transport sensors (Itavi) |
+| [4](#pilot-4-plukon-sieradz-poland-broilers) | Plukon, Sieradz (PL) | Broilers | 1st | IGBZ PAN | ChickenCheck Footpad, Hockburn, Catch Damage, Scratch (CLK); EBENE app (Itavi) |
+| [5](#pilot-5-grossfurtner-higelsberger-austria-pigs) | Grossfurtner-Higelsberger (AT) | Pigs | 2nd | VetMedUni Vienna | PigInspector (CLK); stunning effectiveness and tear staining planned |
+| [6](#pilot-6-carnex-vojvodina-serbia-pigs) | Carnex, Vojvodina (RS) | Pigs | 2nd | BioSense Institute | Animal Sense (Bit Gear); STREMODO, Lesion-Detect, Enviro-Detect planned |
 
 Phase: D1.8[^d18-23]. The details and sources for every cell are in the pilot sections below.
 
@@ -88,7 +92,7 @@ Phase: D1.8[^d18-23]. The details and sources for every cell are in the pilot se
 - Throughput: not stated
 - Region: Gelderland, extending to the rest of the Netherlands and to Germany[^d18-24-d14-16]
 
-**Open questions (register):** Q4; Q5 (vendors CLK, FBN); Q2.
+**Open questions (Founder Brief §6):** Q4; Q5 (vendors CLK, FBN); Q2.
 
 ### Pilot 2: Batallé, Catalonia (Spain, pigs)
 
@@ -126,7 +130,7 @@ Phase: D1.8[^d18-23]. The details and sources for every cell are in the pilot se
 - Throughput: not stated for Batallé. D1.4 gives 10,000 pigs a day for NORFRISA (contradiction 10).[^d14-17]
 - Region: Catalonia, extending to the rest of Spain[^d14-17]
 
-**Open questions (register):** Q4; Q5 (Nuna Solutions, InnoTech Vision; ILVO for tear staining); Q2.
+**Open questions (Founder Brief §6):** Q4; Q5 (Nuna Solutions, InnoTech Vision; ILVO for tear staining); Q2.
 
 ### Pilot 3: DUC (Plukon Food Group), Chailley (France, broilers)
 
@@ -167,7 +171,7 @@ Phase: D1.8[^d18-23]. The details and sources for every cell are in the pilot se
 - Throughput: 12,000 birds an hour (line speed)[^ps26-2]
 - Region: Chailley, Yonne, extending to France, the Netherlands, Germany, Belgium, Poland and Bulgaria[^d14-18]
 
-**Open questions (register):** Q4; Q5 (CLK, Itavi; no holder of the broiler stunning sensor after WEL2BE); Q2.
+**Open questions (Founder Brief §6):** Q4; Q5 (CLK, Itavi; no holder of the broiler stunning sensor after WEL2BE); Q2.
 
 ### Pilot 4: Plukon, Sieradz (Poland, broilers)
 
@@ -202,7 +206,7 @@ Phase: D1.8[^d18-23]. The details and sources for every cell are in the pilot se
 - Throughput: 15,000 birds an hour (line speed)[^ps26-2]
 - Region: Sieradz, extending to France, the Netherlands, Germany, Belgium and Poland[^d14-19]
 
-**Open questions (register):** Q4; Q5 (CLK, Itavi); Q2.
+**Open questions (Founder Brief §6):** Q4; Q5 (CLK, Itavi); Q2.
 
 ### Pilot 5: Grossfurtner-Higelsberger (Austria, pigs)
 
@@ -235,7 +239,7 @@ Phase: D1.8[^d18-23]. The details and sources for every cell are in the pilot se
 - Throughput: 5,500 pigs a week[^d14-20]
 - Region: Upper Austria, extending to the rest of Austria[^d14-20]
 
-**Open questions (register):** Q4; Q5 (CLK, Nuna Solutions; ILVO for tear staining); Q2.
+**Open questions (Founder Brief §6):** Q4; Q5 (CLK, Nuna Solutions; ILVO for tear staining); Q2.
 
 ### Pilot 6: Carnex, Vojvodina (Serbia, pigs)
 
@@ -271,7 +275,7 @@ Phase: D1.8[^d18-23]. The details and sources for every cell are in the pilot se
 - Farms: three, potentially four[^d14-21]
 - Region: Vojvodina, extending to the rest of Serbia[^d14-21]
 
-**Open questions (register):** Q4; Q5 (FBN, InnoTech Vision, Bit Gear); Q2.
+**Open questions (Founder Brief §6):** Q4; Q5 (FBN, InnoTech Vision, Bit Gear); Q2.
 
 ### Statements that apply to all pilots
 
@@ -530,7 +534,6 @@ Apart from items 10–12, no document read contradicts another on slaughterhouse
 
 | Document | Date (from its title or summary page) | Per-pilot content found? |
 |---|---|---|
-| Post-project asset register (private notes, available on request) | 30 Sep 2026 | Yes: pilot list, vendor/TRL table, six ILVO questions |
 | D1.1 Communication, dissemination and exploitation (CD&E) plan and execution report, v1 | Registered by the EC 21 Sep 2024[^d11-1] | No.<br>• Only the country list "FR, PL, ES, NL, AT, RS"[^d11-2] and a description of the website "Pilots" page[^d11-17]. |
 | D1.6 Practice abstracts, batch 1 | v1.0 29 Apr 2024; v2.0 17 Sep 2024, submitted 21 Sep 2024[^d16-2-3]. v2.0 is "Adoption of comments by EC"[^d16-3], so pilot text may reflect April 2024 status. | Yes: one abstract per pilot[^d16-9to11] |
 | D1.2 CD&E plan and execution report, v2 | Registered by the EC 28 Oct 2024, submitted 28 Oct 2024[^d12-1-3] | No per-pilot content.<br>• Mentions that "The third newsletter offered updates on Pilot 1, 2, and 5"[^d12-22]. The newsletters are in Annex D[^d12-49], which is an image and cannot be searched.<br>• Website "Pilots" page description[^d12-17]. |
@@ -557,10 +560,10 @@ Apart from items 10–12, no document read contradicts another on slaughterhouse
 [^d63-44]: D6.3, p.44.
 [^d18-24-d14-16]: D1.8, p.24; D1.4, p.16.
 [^d14-17]: D1.4, p.17.
-[^new]: Added 22 Nov 2026 from a web search or a file already in the repository. Not yet checked in the verification log (`verification/verification-log-A-B.md`).
+[^new]: Added 22 Nov 2026 from aWISH deliverables, CORDIS, or public business registers. Not yet checked in the verification log (`verification/verification-log-A-B.md`).
 [^d63-52]: D6.3, p.52.
 [^d18-30-cat-62]: D1.8, p.30; Catalogue, p.62.
-[^cordis]: CORDIS, aWISH project listing, accessed 7 Oct 2026. Recorded in pack D Table 3 and pack F §6 (not published).
+[^cordis]: CORDIS, aWISH project listing ([cordis.europa.eu/project/id/101060818](https://cordis.europa.eu/project/id/101060818)), accessed 7 Oct 2026.
 [^d18-30]: D1.8, p.30.
 [^cat-57]: Catalogue, p.57.
 [^d63-46]: D6.3, p.46.
@@ -569,7 +572,7 @@ Apart from items 10–12, no document read contradicts another on slaughterhouse
 [^d63-47-52]: D6.3, pp.47, 52.
 [^d14-18]: D1.4, p.18.
 [^d63-53]: D6.3, p.53.
-[^ps26-2]: van Staaveren et al. 2026, *Poultry Science* 105(7):106968, DOI 10.1016/j.psj.2026.106968, p.2.
+[^ps26-2]: van Staaveren et al. 2026, *Poultry Science* 105(7):106968, DOI [10.1016/j.psj.2026.106968](https://doi.org/10.1016/j.psj.2026.106968), p.2.
 [^d14-19]: D1.4, p.19.
 [^d16-11]: D1.6, p.11.
 [^d14-20]: D1.4, p.20.
@@ -577,7 +580,7 @@ Apart from items 10–12, no document read contradicts another on slaughterhouse
 [^d63-51]: D6.3, p.51.
 [^d11-16-d12-16]: D1.1, p.16; D1.2, p.16.
 [^d14-21]: D1.4, p.21.
-[^ar26-3-14]: Banhazi et al. 2026, *Agronomy Research* 24(2):76–95, DOI 10.15159/AR.26.034, PDF pp.3, 14.
+[^ar26-3-14]: Banhazi et al. 2026, *Agronomy Research* 24(2):76–95, DOI [10.15159/AR.26.034](https://doi.org/10.15159/AR.26.034), PDF pp.3, 14.
 [^d11-2-d12-2]: D1.1, p.2; D1.2, p.2.
 [^d11-17-d12-17]: D1.1, p.17; D1.2, p.17.
 [^d18-33]: D1.8, p.33.
@@ -617,17 +620,17 @@ Apart from items 10–12, no document read contradicts another on slaughterhouse
 [^d14-17-20]: D1.4, pp.17–20.
 [^cat-62]: Catalogue, p.62.
 [^cordis-p]: CORDIS, aWISH project page, participant list ("Participants (29)"), read 22 Nov 2026; page last updated 26 Nov 2025. https://cordis.europa.eu/project/id/101060818
-[^packf-6]: Nuna Solutions' website, quoted in pack F §6 (not published).
+[^packf-6]: Nuna Solutions' website (accessed Oct 2026).
 [^d16-9-11]: D1.6, pp.9, 11.
 [^cat-88]: Catalogue, p.88.
-[^web-pilots]: Project website pilots page, accessed 7 Oct 2026. Recorded in pack D (not published).
+[^web-pilots]: aWISH project website pilots page ([www.awish-project.eu](https://www.awish-project.eu/)), accessed 7 Oct 2026.
 [^d18-30-cat-88]: D1.8, p.30; Catalogue, p.88.
-[^mie]: aWISH Meat Industry Event, 8 Oct 2026, slide deck, slides 25 and 83. Local copy: `deliverables/post-end-sweep/Meat Industry Event slide deck (website upload Nov 2026).pdf`.
+[^mie]: aWISH Meat Industry Event, 8 Oct 2026, slide deck (uploaded to aWISH website Nov 2026), slides 25 and 83.
 [^d18-18]: D1.8, p.18.
 [^d14-10]: D1.4, p.10.
 [^d16-3]: D1.6, p.3.
 [^norfrisa]: Alimarket company record for Frigoríficos del Nordeste, S.A. (Norfrisa): group "CÁRNICA BATALLÉ"; "Matadero de servicios de porcino"; Riudellots de la Selva, Girona. https://www.alimarket.es/alimentacion/empresa/225356/frigorificos-del-nordeste--s-a---norfrisa--225356. BORME entries (Registro Mercantil de Girona) shown by InfoNIF: presidents Pere Batalle Deulonder (to Dec 2024), Josep Batalle Deulonder (Dec 2024) and Josep Batalle Carbones (from 25 Mar 2025), as printed. https://infonif.economia3.com/ficha-empresa/frigorificos-del-nordeste-sa. Both read 22 Nov 2026.
-[^packe-17]: Pack E, source 17 (not published).
+[^packe-17]: aWISH Meat Industry Event programme (8 Oct 2026).
 [^d11-1]: D1.1, p.1.
 [^d11-17]: D1.1, p.17.
 [^d16-2-3]: D1.6, pp.2–3.

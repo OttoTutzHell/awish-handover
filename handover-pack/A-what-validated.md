@@ -1,23 +1,27 @@
+[← Back to README](../README.md) · [Founder Brief (online)](https://ottotutzhell.github.io/awish-handover/founder-brief.html) · [Pack B: Pilot plants](B-per-pilot-sheet.md) · [Glossary](../GLOSSARY.md)
+
 # A. What aWISH has validated
 
 This pack lists every welfare indicator and sensor the project covered and says, for each one, what validation exists: by whom, against what, and with what result.
 
+**Contents:** [In brief](#in-brief) · [How to read this pack](#how-to-read-this-pack) · [Pigs (P1–P22)](#pigs) · [Broilers (B1–B16)](#broilers) · [Publications](#table-2-publications) · [Could not find / not stated](#could-not-find--not-stated) · [Disagreements between sources](#disagreements-between-sources)
+
 ## In brief
 
-- **38 indicator–sensor rows**: 22 for pigs (P1–P22) and 16 for broilers (B1–B16).
-- **Four rows have peer-reviewed validation figures from the aWISH period (2022–2026):**
-	- P3 Weight-Detect (pig body weight, on farm)
-	- P9 Lesion-Detect (pig lung lesions, slaughter line)
-	- B10 and B11 ChickenCheck (broiler footpad dermatitis and hock burn, slaughter line)
+- **38 indicator–sensor rows**: 22 for pigs ([P1–P22](#pigs)) and 16 for broilers ([B1–B16](#broilers)).
+- **Four rows (across three peer-reviewed papers) have validation figures from the aWISH period (2022–2026):**
+	- [P3 Weight-Detect](#p3-body-weight-awish-pilot-sensor) (pig body weight, on farm)
+	- [P9 Lesion-Detect](#p9-lung-and-liver-lesions) (pig lung lesions, slaughter line)
+	- [B10](#b10-foot-pad-dermatitis-carcass) and [B11](#b11-hock-burn-carcass) ChickenCheck (broiler footpad dermatitis and hock burn, slaughter line)
 - **Every other figure concerning pigs** is one of two kinds:
 	- a pre-aWISH third-party study of a vendor system
-	- for P8 and P10, unreviewed slides from aWISH's Final Event
+	- for [P8](#p8-tail-length) and [P10](#p10-stunning-effectiveness-consciousness-after-co2-stunning), unreviewed slides from aWISH's Final Event
 - **The pilots' own final results (work package 3) are not public yet.** The pig validation statistics are expected before 2027 (see [Could not find](#could-not-find--not-stated)).
 
 ## How to read this pack
 
 ### The sources
-aWISH's reports are called deliverables and numbered D*x.y*: *x* is the work package (WP), *y* the report. WP1 is communication and dissemination, WP2 indicators and sensors, WP3 the pilots. The ones this pack cites:
+aWISH's reports are called deliverables and numbered D*x.y*: *x* is the work package (WP), *y* the report. WP1 is communication and dissemination, WP2 indicators and sensors, WP3 the pilots. Because of copyright restrictions, the deliverables and third-party papers are not uploaded to this repository; they can be downloaded from the [aWISH project website](https://www.awish-project.eu/) and [CORDIS (grant 101060818)](https://cordis.europa.eu/project/id/101060818), and papers are linked by DOI in [Table 2](#table-2-publications). The sources this pack cites:
 
 | Short name     | What it is                                                                                                                                                                                                        |
 | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -31,10 +35,9 @@ aWISH's reports are called deliverables and numbered D*x.y*: *x* is the work pac
 | D2.2 Ann. 2, 3 | D2.2's Excel annexes 2 and 3, one per species: every sensor found, with columns for validation level, gold standard, accuracy, sensitivity and specificity. Embedded as attachments in the D2.2 PDF[^annex-files] |
 | D6.2, D6.3     | Data management plans, v1 and v2                                                                                                                                                                                  |
 | Cat.           | The AWI Catalogue (D2.5, final version, updated Sep 2026): one entry per indicator and technology                                                                                                                 |
-| CORDIS listing | The EU's project record (cordis.europa.eu), last updated 26 Nov 2025                                                                                                                                              |
+| CORDIS listing | The EU's project record ([cordis.europa.eu/project/id/101060818](https://cordis.europa.eu/project/id/101060818)), last updated 26 Nov 2025                                                                        |
 | BSE-rev        | Ramon-Perez et al. 2025, a review of pig slaughterhouse welfare technologies, *Biosystems Engineering* 259:104286[^bse]                                                                                           |
 | PS-2026        | van Staaveren et al. 2026, the ChickenCheck validation, *Poultry Science* 105(7):106968[^ps26]                                                                                                                    |
-| Packs C–S      | Internal working notes from this handover. Not published, but available on request                                                                                                                                |
 
 - **Page numbers** are PDF page numbers, and may be off by one or two. 
 - **Quotes** are verbatim from the source.
@@ -70,28 +73,28 @@ aWISH's reports are called deliverables and numbered D*x.y*: *x* is the work pac
 
 | # | Indicator | Stage | Validation evidence |
 |---|---|---|---|
-| P1 | Drinking behaviour | Antemortem (lairage) per Cat.; On-farm per D2.2 | None reported |
-| P2 | Body weight / body condition | Antemortem per Cat.; On-farm per D2.2 | Pre-aWISH or vendor figures only |
-| P3 | Body weight (aWISH pilot sensor) | On-farm (pilot 2, Spain) | aWISH, peer-reviewed |
-| P4 | Cough / respiratory disease | Antemortem per Cat.; On-farm per D2.2 | Pre-aWISH or vendor figures only |
-| P5 | Skin lesions (carcass) | Postmortem per Cat.; Slaughterhouse | None reported |
-| P6 | Ear lesions (carcass) | Postmortem / slaughterhouse | Pre-aWISH or vendor figures only |
-| P7 | Tail lesions (carcass) | Postmortem / slaughterhouse | Pre-aWISH or vendor figures only |
-| P8 | Tail length | Postmortem / slaughterhouse | aWISH, not peer-reviewed |
-| P9 | Lung (and liver) lesions | Postmortem (evisceration line) | aWISH, peer-reviewed |
-| P10 | Stunning effectiveness (consciousness after CO2 stunning) | Stunning / slaughterhouse | aWISH, not peer-reviewed |
-| P11 | Killing effectiveness (bleeding / signs of life) | Stunning–bleeding / slaughterhouse | Pre-aWISH or vendor figures only |
-| P12 | Tail biting (behaviour) | Antemortem per Cat.; On-farm per D2.2 | Pre-aWISH or vendor figures only |
-| P13 | Activity level / posture | Antemortem per Cat.; On-farm | Pre-aWISH or vendor figures only |
-| P14 | Stress vocalisations | Antemortem: unloading & lairage | Pre-aWISH or vendor figures only |
-| P15 | Handling management (human–animal interaction) | Antemortem: unloading | None reported |
-| P16 | Tear staining | Postmortem (slaughter line) | aWISH, not peer-reviewed **[unverified]** |
-| P17 | Noise level | Antemortem: waiting area | None reported |
-| P18 | Space availability (lairage) | Antemortem: waiting pens | None reported |
-| P19 | Body temperature | Antemortem per Cat.; On-farm / lairage | Pre-aWISH or vendor figures only |
-| P20 | Blood stress markers (IGF / IGFBP) | Slaughter: exsanguination blood | None reported |
-| P21 | Barn climate (temperature, humidity, NH3, dust, CO2) | On-farm | None reported |
-| P22 | Lameness (gait) | On-farm (D2.2 only; not in Cat.) | Pre-aWISH or vendor figures only |
+| [P1](#p1-drinking-behaviour) | Drinking behaviour | Antemortem (lairage) per Cat.; On-farm per D2.2 | None reported |
+| [P2](#p2-body-weight--body-condition) | Body weight / body condition | Antemortem per Cat.; On-farm per D2.2 | Pre-aWISH or vendor figures only |
+| [P3](#p3-body-weight-awish-pilot-sensor) | Body weight (aWISH pilot sensor) | On-farm (pilot 2, Spain) | aWISH, peer-reviewed |
+| [P4](#p4-cough--respiratory-disease) | Cough / respiratory disease | Antemortem per Cat.; On-farm per D2.2 | Pre-aWISH or vendor figures only |
+| [P5](#p5-skin-lesions-carcass) | Skin lesions (carcass) | Postmortem per Cat.; Slaughterhouse | None reported |
+| [P6](#p6-ear-lesions-carcass) | Ear lesions (carcass) | Postmortem / slaughterhouse | Pre-aWISH or vendor figures only |
+| [P7](#p7-tail-lesions-carcass) | Tail lesions (carcass) | Postmortem / slaughterhouse | Pre-aWISH or vendor figures only |
+| [P8](#p8-tail-length) | Tail length | Postmortem / slaughterhouse | aWISH, not peer-reviewed |
+| [P9](#p9-lung-and-liver-lesions) | Lung (and liver) lesions | Postmortem (evisceration line) | aWISH, peer-reviewed |
+| [P10](#p10-stunning-effectiveness-consciousness-after-co2-stunning) | Stunning effectiveness (consciousness after CO2 stunning) | Stunning / slaughterhouse | aWISH, not peer-reviewed |
+| [P11](#p11-killing-effectiveness-bleeding--signs-of-life) | Killing effectiveness (bleeding / signs of life) | Stunning–bleeding / slaughterhouse | Pre-aWISH or vendor figures only |
+| [P12](#p12-tail-biting-behaviour) | Tail biting (behaviour) | Antemortem per Cat.; On-farm per D2.2 | Pre-aWISH or vendor figures only |
+| [P13](#p13-activity-level--posture) | Activity level / posture | Antemortem per Cat.; On-farm | Pre-aWISH or vendor figures only |
+| [P14](#p14-stress-vocalisations) | Stress vocalisations | Antemortem: unloading & lairage | Pre-aWISH or vendor figures only |
+| [P15](#p15-handling-management-humananimal-interaction) | Handling management (human–animal interaction) | Antemortem: unloading | None reported |
+| [P16](#p16-tear-staining) | Tear staining | Postmortem (slaughter line) | aWISH, not peer-reviewed **[unverified]** |
+| [P17](#p17-noise-level) | Noise level | Antemortem: waiting area | None reported |
+| [P18](#p18-space-availability-lairage) | Space availability (lairage) | Antemortem: waiting pens | None reported |
+| [P19](#p19-body-temperature) | Body temperature | Antemortem per Cat.; On-farm / lairage | Pre-aWISH or vendor figures only |
+| [P20](#p20-blood-stress-markers-igf--igfbp) | Blood stress markers (IGF / IGFBP) | Slaughter: exsanguination blood | None reported |
+| [P21](#p21-barn-climate-temperature-humidity-nh3-dust-co2) | Barn climate (temperature, humidity, NH3, dust, CO2) | On-farm | None reported |
+| [P22](#p22-lameness-gait) | Lameness (gait) | On-farm (D2.2 only; not in Cat.) | Pre-aWISH or vendor figures only |
 
 #### P1. Drinking behaviour
 
@@ -158,7 +161,7 @@ aWISH's reports are called deliverables and numbered D*x.y*: *x* is the work pac
 **TRL:**
 - 7 (est.)[^d22-19]
 - 7 for Weight-Detect as installed in Pilot 2, Batallé[^d16-9]
-- **[unverified]**[^new] 5 in D2.2 Ann. 2[^a22p-p2]. See Disagreement D13
+- **[unverified]**[^new] 5 in D2.2 Ann. 2[^a22p-p2]. See Disagreement D12
 
 #### P4. Cough / respiratory disease
 
@@ -307,7 +310,7 @@ aWISH's reports are called deliverables and numbered D*x.y*: *x* is the work pac
 
 **TRL:**
 - CLK Bleeding control 9 (est.)[^d22-19]
-- **[unverified]**[^new] 2–3 in D2.2 Ann. 2, marked not validated;[^a22p-p11] 9 in D2.1, validity "?"[^a21p-p11]. See Disagreement D13
+- **[unverified]**[^new] 2–3 in D2.2 Ann. 2, marked not validated;[^a22p-p11] 9 in D2.1, validity "?"[^a21p-p11]. See Disagreement D12
 
 #### P12. Tail biting (behaviour)
 
@@ -467,22 +470,22 @@ aWISH's reports are called deliverables and numbered D*x.y*: *x* is the work pac
 
 | # | Indicator | Stage | Validation evidence |
 |---|---|---|---|
-| B1 | Body weight | Antemortem per Cat.; On-farm | Pre-aWISH or vendor figures only |
-| B2 | Gait score (via flock activity/distribution) | Antemortem per Cat.; On-farm | Pre-aWISH or vendor figures only |
-| B3 | Foot health on farm (FPD & hock burn prediction) | Antemortem / on-farm | Pre-aWISH or vendor figures only |
-| B4 | Atmosphere (CO2, humidity) via vocalisations | Antemortem / on-farm | None reported |
-| B5 | Distress / alarm calls | Antemortem: lairage (and on-farm) | None reported |
-| B6 | Broiler activity (individual tracking) on farm | On-farm | None reported |
-| B7 | On-farm welfare assessment (manual app) | On-farm | None reported |
-| B8 | Transport climate (temperature, humidity, CO2 in crates) / heat-stress model | Transport | None reported |
-| B9 | Stunning effectiveness | Stunning: gas tunnel exit | Pre-aWISH or vendor figures only |
-| B10 | Foot pad dermatitis (carcass) | Postmortem (after plucking) | aWISH, peer-reviewed |
-| B11 | Hock burn (carcass) | Postmortem | aWISH, peer-reviewed |
-| B12 | Catch damage (haematomas, broken wings/legs; bruises, fractures) | Postmortem | None reported |
-| B13 | Scratches (back) | Postmortem | None reported |
-| B14 | Activity (RFID walking distance) | On-farm (D2.2 only; not in Cat.) | Pre-aWISH or vendor figures only |
-| B15 | Abnormal sounds / sneezing | On-farm (D2.2 only) | Pre-aWISH or vendor figures only |
-| B16 | Body temperature | On-farm (D2.2 only) | Pre-aWISH or vendor figures only |
+| [B1](#b1-body-weight) | Body weight | Antemortem per Cat.; On-farm | Pre-aWISH or vendor figures only |
+| [B2](#b2-gait-score-via-flock-activitydistribution) | Gait score (via flock activity/distribution) | Antemortem per Cat.; On-farm | Pre-aWISH or vendor figures only |
+| [B3](#b3-foot-health-on-farm-fpd--hock-burn-prediction) | Foot health on farm (FPD & hock burn prediction) | Antemortem / on-farm | Pre-aWISH or vendor figures only |
+| [B4](#b4-atmosphere-co2-humidity-via-vocalisations) | Atmosphere (CO2, humidity) via vocalisations | Antemortem / on-farm | None reported |
+| [B5](#b5-distress--alarm-calls) | Distress / alarm calls | Antemortem: lairage (and on-farm) | None reported |
+| [B6](#b6-broiler-activity-individual-tracking-on-farm) | Broiler activity (individual tracking) on farm | On-farm | None reported |
+| [B7](#b7-on-farm-welfare-assessment-manual-app) | On-farm welfare assessment (manual app) | On-farm | None reported |
+| [B8](#b8-transport-climate-temperature-humidity-co2-in-crates--heat-stress-model) | Transport climate (temperature, humidity, CO2 in crates) / heat-stress model | Transport | None reported |
+| [B9](#b9-stunning-effectiveness) | Stunning effectiveness | Stunning: gas tunnel exit | Pre-aWISH or vendor figures only |
+| [B10](#b10-foot-pad-dermatitis-carcass) | Foot pad dermatitis (carcass) | Postmortem (after plucking) | aWISH, peer-reviewed |
+| [B11](#b11-hock-burn-carcass) | Hock burn (carcass) | Postmortem | aWISH, peer-reviewed |
+| [B12](#b12-catch-damage-haematomas-broken-wingslegs-bruises-fractures) | Catch damage (haematomas, broken wings/legs; bruises, fractures) | Postmortem | None reported |
+| [B13](#b13-scratches-back) | Scratches (back) | Postmortem | None reported |
+| [B14](#b14-activity-rfid-walking-distance) | Activity (RFID walking distance) | On-farm (D2.2 only; not in Cat.) | Pre-aWISH or vendor figures only |
+| [B15](#b15-abnormal-sounds--sneezing) | Abnormal sounds / sneezing | On-farm (D2.2 only) | Pre-aWISH or vendor figures only |
+| [B16](#b16-body-temperature) | Body temperature | On-farm (D2.2 only) | Pre-aWISH or vendor figures only |
 
 #### B1. Body weight
 
@@ -739,34 +742,34 @@ aWISH's reports are called deliverables and numbered D*x.y*: *x* is the work pac
 
 ## Table 2: Publications
 
-| Title                                                                                                                                               | Authors (as listed)                                                                                                                                                                                              | Journal / venue                               | Year             | DOI                                              | Notes                                                                                                                                                                                                                                                             |
-| --------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | ---------------- | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Validation of an automated system for at-slaughter assessment of footpad dermatitis and hock burn in broiler chickens                               | N. van Staaveren, K. van Langeveld, J. Schulte-Landwehr, J. Mulder, P. Galliot, P. Créach, P. Sztandarski, J. Marchewka, B. Forkman, N. Van Noten, F.A.M. Tuyttens, M.F. Giersberg, M.W.E. Manet, T.B. Rodenburg | Poultry Science 105(7):106968                 | 2026             | 10.1016/j.psj.2026.106968                        | Open access, CC BY. Peer-reviewed aWISH-period validation (B10, B11)                                                                                                                                                                                              |
-| Technologies for automatic assessment of pig welfare using animal-based indicators in the slaughterhouse: a review                                  | Ramon-Perez, Camerlink, van Staaveren, Maschat, van Langeveld, Banhazi, Fels, Jachens, Maselyne, Forkman, Llonch                                                                                                 | Biosystems Engineering 259:104286             | 2025             | 10.1016/j.biosystemseng.2025.104286              | Open access. Review of 16 slaughterhouse and 71 on-farm technologies (52 feasible). Figures are from cited third-party studies, none aWISH-period. One author employed by Innotech Vision                                                                         |
-| Sub-clinical respiratory infection identified on farms by monitoring weight changes of pigs with the Weight-Detect instrument                       | Banhazi, Dunn, Banhazi, Reixach, Ramon-Perez, Llonch, Maselyne                                                                                                                                                   | Agronomy Research 23(S1):5–14                 | 2025             | 10.15159/AR.25.032                               | One pen, nine pigs, four manual weighings; observational, no statistics. Vendor (PLF Agritech) and farm owner (Selección Batallé) are co-authors (P3)                                                                                                             |
-| Development and pilot testing of the 'Lesion-Detect' system for automated identification and scoring of gross lung lesions in pigs during slaughter | Banhazi, Dunn, Banhazi, Reixach, Gol, Ramon-Perez, Llonch, Vujacic, Sudar, Kajari, Maselyne, Van Noten, Tuyttens                                                                                                 | Agronomy Research 24(2):76–95                 | 2026             | 10.15159/AR.26.034                               | Peer-reviewed aWISH-period validation against manual PHMS scoring, two pilot plants (P9)                                                                                                                                                                          |
-| A framework for a comprehensive animal welfare label                                                                                                | Tuyttens, Lawrence, Mullan                                                                                                                                                                                       | Animal Frontiers 15(2):61–68                  | 2025 (April)     | 10.1093/af/vfaf003                               | Conceptual: a four-tier label combining method-of-production tiers with at-slaughter animal-based-measure screening; Table 3 gives pros and cons of at-slaughter monitoring. Funded by aWISH. **No validation data**; relevant to the policy case, not to Table 1 |
-| Nuevos enfoques para monitorizar el bienestar animal mediante sensores e IA                                                                         | Ramon Perez, Ko, Llonch, Allueva Molina (UAB)                                                                                                                                                                    | SUIS no. 207, pp.22–27 (Spanish)              | 2024 (May)       | none given                                       | Overview article. Table 2 lists slaughterhouse indicators by sensor type. Acknowledges ClearFarm, aWISH, PigLF. **No validation figures**                                                                                                                         |
-| (National overview of Polish poultry welfare research; one paragraph on aWISH)                                                                      | Siwek, Marchewka                                                                                                                                                                                                 | Polskie Drobiarstwo (Polish)                  | 2023 (September) | none given                                       | Overview. The aWISH paragraph gives 24 partners, 13 countries, six slaughterhouses, catalogue, best-practice guides. **No validation figures**                                                                                                                    |
-| Scoring Tear Staining in Pigs: Similarity, Consistency, Accuracy, and Level of Experience                                                           | van Langeveld, van Staaveren, Van Noten, Rodenburg, Tuyttens                                                                                                                                                     | Proc. ISAE Benelux Conference 2024            | 2024             | 10.5281/zenodo.17803862                          | Human raters only (P16)                                                                                                                                                                                                                                           |
-| Developing the "Lesion-Detect" system …                                                                                                             | Banhazi et al.                                                                                                                                                                                                   | 15th Int. Conf. Biosystems Engineering, Tartu | 2025             | 10.5281/zenodo.17786812                          | No figures (P9)                                                                                                                                                                                                                                                   |
-| Development of the Lesion-Detect System …                                                                                                           | Banhazi et al.                                                                                                                                                                                                   | ISAH & SEAOHUN Conf., Chiang Mai              | 2024             | 10.5281/zenodo.17630315                          | No figures (P9)                                                                                                                                                                                                                                                   |
-| Automated evaluation of pig consciousness in the slaughterhouse: sensor development                                                                 | Ramon-Perez, Gol, Reixach, Sanchez, Manteca, Llonch                                                                                                                                                              | HSA Conference 2025                           | 2025             | 10.5281/zenodo.17475673                          | No accuracy figure (P10)                                                                                                                                                                                                                                          |
-| Development of an automated tool for monitoring tail length and lesions in pig slaughterhouses                                                      | Ramon-Perez, Gol, Arbat, Reixach, Llonch                                                                                                                                                                         | Proc. 58th ISAE Congress                      | 2025             | 10.5281/zenodo.17475558                          | Preliminary F-scores (P8)                                                                                                                                                                                                                                         |
-| Area-specific vocalisation and activity monitoring in pigs (STREMODO)                                                                               | Westendorff, Puppe, Moscovice, Eusemann, Manteuffel                                                                                                                                                              | ECPLF 2024                                    | 2024             | 10.5281/zenodo.18549284 (per project site)       | Barn study, not aWISH-funded (P14)                                                                                                                                                                                                                                |
-| The aWISH project: Automated animal welfare monitoring for broilers and pigs at the slaughterhouse                                                  | Rodenburg et al.                                                                                                                                                                                                 | Measuring Behavior 2024                       | 2024             | 10.6084/m9.figshare.25897855                     |                                                                                                                                                                                                                                                                   |
-| Weight-Detect instrument predicted impending respiratory infection … ; Enviro-Detect instrument …                                                   | Banhazi et al.                                                                                                                                                                                                   | ISAH & SEAOHUN Conf. 2024                     | 2024             | 10.5281/zenodo.17628730; 10.5281/zenodo.17629216 | Same Weight-Detect study as P3; Enviro-Detect barn readings (P21)                                                                                                                                                                                                 |
-| Guideline(s) to validate sensor output of animal-based measurements                                                                                 | Maselyne et al.; Llonch et al.                                                                                                                                                                                   | EAAP 2024; WAFL 2024                          | 2024             | 10.5281/zenodo.13969485; 10.5281/zenodo.13991423 | Method guidance, not indicator results                                                                                                                                                                                                                            |
-| Validation of a computer vision model for automated tear staining assessment in pigs                                                                | Verlinde et al.                                                                                                                                                                                                  | EAAP 2026                                     | 2026             | 10.5281/zenodo.23688694                          | **[unverified]** Preliminary sensor figures (P16)                                                                                                                                                                                                                 |
-| Automated welfare monitoring through tear staining assessment in pigs at slaughter                                                                  | Verlinde, Ramon-Perez, Reixach, Gol, Llonch Obiols, Maselyne, Verwaeren                                                                                                                                          | AI4AS 2026                                    | 2026             | 10.5281/zenodo.23688353                          | **[unverified]** Preliminary sensor figures at one commercial slaughterhouse (P16)                                                                                                                                                                                |
-| Catch damage in broiler chickens: a systematic review of injury assessment methods and their limitations                                            | Sztandarski, Marchewka, Jaszczyk, Solka, Horbańczuk, Riber, Tuyttens, Rodenburg                                                                                                                                  | Poultry Science 105:107825                    | 2026             | 10.5281/zenodo.23694494 (Zenodo copy)            | **[unverified]** No validation of ChickenCheck Catch Damage (B12). Acknowledges aWISH                                                                                                                                                                             |
-| Improving Broiler Transport Efficiency Using CFD: Heat Stress Analysis and Mitigation Measures                                                      | Guyot, Galliot, Roux, Creach                                                                                                                                                                                     | EAAP 2025, Innsbruck                          | 2025             | 10.5281/zenodo.17423125                          | **[unverified]** Heat-stress model validated against 12 monitored trucks; temperature RMSE 1.95 °C (B8). The record holds the slide deck                                                                                                                          |
+| Title | Authors (as listed) | Journal / venue | Year | DOI | Notes |
+|---|---|---|---|---|---|
+| Validation of an automated system for at-slaughter assessment of footpad dermatitis and hock burn in broiler chickens | N. van Staaveren, K. van Langeveld, J. Schulte-Landwehr, J. Mulder, P. Galliot, P. Créach, P. Sztandarski, J. Marchewka, B. Forkman, N. Van Noten, F.A.M. Tuyttens, M.F. Giersberg, M.W.E. Manet, T.B. Rodenburg | Poultry Science 105(7):106968 | 2026 | [10.1016/j.psj.2026.106968](https://doi.org/10.1016/j.psj.2026.106968) | Open access, CC BY. Peer-reviewed aWISH-period validation (B10, B11) |
+| Technologies for automatic assessment of pig welfare using animal-based indicators in the slaughterhouse: a review | Ramon-Perez, Camerlink, van Staaveren, Maschat, van Langeveld, Banhazi, Fels, Jachens, Maselyne, Forkman, Llonch | Biosystems Engineering 259:104286 | 2025 | [10.1016/j.biosystemseng.2025.104286](https://doi.org/10.1016/j.biosystemseng.2025.104286) | Open access. Review of 16 slaughterhouse and 71 on-farm technologies (52 feasible). Figures are from cited third-party studies, none aWISH-period. One author employed by Innotech Vision |
+| Sub-clinical respiratory infection identified on farms by monitoring weight changes of pigs with the Weight-Detect instrument | Banhazi, Dunn, Banhazi, Reixach, Ramon-Perez, Llonch, Maselyne | Agronomy Research 23(S1):5–14 | 2025 | [10.15159/AR.25.032](https://doi.org/10.15159/AR.25.032) | One pen, nine pigs, four manual weighings; observational, no statistics. Vendor (PLF Agritech) and farm owner (Selección Batallé) are co-authors (P3) |
+| Development and pilot testing of the 'Lesion-Detect' system for automated identification and scoring of gross lung lesions in pigs during slaughter | Banhazi, Dunn, Banhazi, Reixach, Gol, Ramon-Perez, Llonch, Vujacic, Sudar, Kajari, Maselyne, Van Noten, Tuyttens | Agronomy Research 24(2):76–95 | 2026 | [10.15159/AR.26.034](https://doi.org/10.15159/AR.26.034) | Peer-reviewed aWISH-period validation against manual PHMS scoring, two pilot plants (P9) |
+| A framework for a comprehensive animal welfare label | Tuyttens, Lawrence, Mullan | Animal Frontiers 15(2):61–68 | 2025 (April) | [10.1093/af/vfaf003](https://doi.org/10.1093/af/vfaf003) | Conceptual: a four-tier label combining method-of-production tiers with at-slaughter animal-based-measure screening; Table 3 gives pros and cons of at-slaughter monitoring. Funded by aWISH. **No validation data**; relevant to the policy case, not to Table 1 |
+| Nuevos enfoques para monitorizar el bienestar animal mediante sensores e IA | Ramon Perez, Ko, Llonch, Allueva Molina (UAB) | SUIS no. 207, pp.22–27 (Spanish) | 2024 (May) | none given | Overview article. Table 2 lists slaughterhouse indicators by sensor type. Acknowledges ClearFarm, aWISH, PigLF. **No validation figures** |
+| (National overview of Polish poultry welfare research; one paragraph on aWISH) | Siwek, Marchewka | Polskie Drobiarstwo (Polish) | 2023 (September) | none given | Overview. The aWISH paragraph gives 24 partners, 13 countries, six slaughterhouses, catalogue, best-practice guides. **No validation figures** |
+| Scoring Tear Staining in Pigs: Similarity, Consistency, Accuracy, and Level of Experience | van Langeveld, van Staaveren, Van Noten, Rodenburg, Tuyttens | Proc. ISAE Benelux Conference 2024 | 2024 | [10.5281/zenodo.17803862](https://doi.org/10.5281/zenodo.17803862) | Human raters only (P16) |
+| Developing the "Lesion-Detect" system … | Banhazi et al. | 15th Int. Conf. Biosystems Engineering, Tartu | 2025 | [10.5281/zenodo.17786812](https://doi.org/10.5281/zenodo.17786812) | No figures (P9) |
+| Development of the Lesion-Detect System … | Banhazi et al. | ISAH & SEAOHUN Conf., Chiang Mai | 2024 | [10.5281/zenodo.17630315](https://doi.org/10.5281/zenodo.17630315) | No figures (P9) |
+| Automated evaluation of pig consciousness in the slaughterhouse: sensor development | Ramon-Perez, Gol, Reixach, Sanchez, Manteca, Llonch | HSA Conference 2025 | 2025 | [10.5281/zenodo.17475673](https://doi.org/10.5281/zenodo.17475673) | No accuracy figure (P10) |
+| Development of an automated tool for monitoring tail length and lesions in pig slaughterhouses | Ramon-Perez, Gol, Arbat, Reixach, Llonch | Proc. 58th ISAE Congress | 2025 | [10.5281/zenodo.17475558](https://doi.org/10.5281/zenodo.17475558) | Preliminary F-scores (P8) |
+| Area-specific vocalisation and activity monitoring in pigs (STREMODO) | Westendorff, Puppe, Moscovice, Eusemann, Manteuffel | ECPLF 2024 | 2024 | [10.5281/zenodo.18549284](https://doi.org/10.5281/zenodo.18549284) (per project site) | Barn study, not aWISH-funded (P14) |
+| The aWISH project: Automated animal welfare monitoring for broilers and pigs at the slaughterhouse | Rodenburg et al. | Measuring Behavior 2024 | 2024 | [10.6084/m9.figshare.25897855](https://doi.org/10.6084/m9.figshare.25897855) | |
+| Weight-Detect instrument predicted impending respiratory infection … ; Enviro-Detect instrument … | Banhazi et al. | ISAH & SEAOHUN Conf. 2024 | 2024 | [10.5281/zenodo.17628730](https://doi.org/10.5281/zenodo.17628730); [10.5281/zenodo.17629216](https://doi.org/10.5281/zenodo.17629216) | Same Weight-Detect study as P3; Enviro-Detect barn readings (P21) |
+| Guideline(s) to validate sensor output of animal-based measurements | Maselyne et al.; Llonch et al. | EAAP 2024; WAFL 2024 | 2024 | [10.5281/zenodo.13969485](https://doi.org/10.5281/zenodo.13969485); [10.5281/zenodo.13991423](https://doi.org/10.5281/zenodo.13991423) | Method guidance, not indicator results |
+| Validation of a computer vision model for automated tear staining assessment in pigs | Verlinde et al. | EAAP 2026 | 2026 | [10.5281/zenodo.23688694](https://doi.org/10.5281/zenodo.23688694) | **[unverified]** Preliminary sensor figures (P16) |
+| Automated welfare monitoring through tear staining assessment in pigs at slaughter | Verlinde, Ramon-Perez, Reixach, Gol, Llonch Obiols, Maselyne, Verwaeren | AI4AS 2026 | 2026 | [10.5281/zenodo.23688353](https://doi.org/10.5281/zenodo.23688353) | **[unverified]** Preliminary sensor figures at one commercial slaughterhouse (P16) |
+| Catch damage in broiler chickens: a systematic review of injury assessment methods and their limitations | Sztandarski, Marchewka, Jaszczyk, Solka, Horbańczuk, Riber, Tuyttens, Rodenburg | Poultry Science 105:107825 | 2026 | [10.5281/zenodo.23694494](https://doi.org/10.5281/zenodo.23694494) (Zenodo copy) | **[unverified]** No validation of ChickenCheck Catch Damage (B12). Acknowledges aWISH |
+| Improving Broiler Transport Efficiency Using CFD: Heat Stress Analysis and Mitigation Measures | Guyot, Galliot, Roux, Creach | EAAP 2025, Innsbruck | 2025 | [10.5281/zenodo.17423125](https://doi.org/10.5281/zenodo.17423125) | **[unverified]** Heat-stress model validated against 12 monitored trucks; temperature RMSE 1.95 °C (B8). The record holds the slide deck |
 
 Listing sources:
 
 - the project website's journal and conference pages, https://www.awish-project.eu/journal-papers/ and https://www.awish-project.eu/conference-papers/ (opened 7 Oct 2026)
 - the CORDIS listing, pp.3–7 ("Last update: 26 November 2025")
-- the last four rows: a Zenodo search for grant 101060818 on 22 Nov 2026 (21 records) and the repository's 2 Nov sweep. On 7 Oct, Zenodo refused all searches.
+- the last four rows: a Zenodo search for grant 101060818 on 22 Nov 2026 (21 records)
 
 ---
 
@@ -815,7 +818,7 @@ Listing sources:
 	- D2.2 p.27: "CET'Automatique — Wel2be — Automatic control of pig unconsciousness at slaughter"
 	- D6.2 p.92: "Pilot2_W2B1 CET'automatique Vision system 16/03/2023"
 	- CORDIS (7 Oct 2026): "WEL2BE — Participation ended"
-	- Nuna's site: "NunaSolutions, is a brand of Teknologisk Institute" (pack F §6, not published)
+	- Nuna Solutions' website: "NunaSolutions, is a brand of Teknologisk Institute"
 	- The 2023–2024 documents (D6.2, D1.4, D1.6) name WEL2BE; the 2025–2026 documents (D1.8, Catalogue, website) name Nuna Solutions.
 	- Not stated in any document read: whether BlinkAI and CET'Automatique are the same system, and on what terms the role passed from WEL2BE to Nuna Solutions.
 	- The **broiler** stunning sensor (B9) remains attributed to WEL2BE only.
@@ -841,41 +844,41 @@ Listing sources:
 - **D9. D2.2 internal counts.**
 	- Executive summary: "Seven pig welfare assessment products are considered validated, three already on the market and three still in development" (p.7). Table 16 (p.35) lists 8 rows: 3 "On market" and 5 "Prototype".
 	- Conclusions (p.35) state "107 commercial sensors and 23 prototypes" for pigs, vs "88 … 16" (pp.7, 12).
-- **D11. Poultry Science 2026 author list.** The journal record includes "M.W.E. Manet". The SciFAW Centenary conference version of the same title (research-portal.uu.nl "…-2" record) omits Manet, and the DSpace copy spells "Tuyttels".
-- **D13. TRLs within D2.2, and between D2.2 and D2.1.** **[unverified]**[^new]
+- **D10. Poultry Science 2026 author list.** The journal record includes "M.W.E. Manet". The SciFAW Centenary conference version of the same title (research-portal.uu.nl "…-2" record) omits Manet, and the DSpace copy spells "Tuyttels".
+- **D11. BroilerZoom.** Catalogue p.112: "externally validated". D2.2 p.33 reports "average relative mean error of 8%", with "errors … generally larger in the end of the rearing period": no R or accuracy against the D2.2 criterion.
+- **D12. TRLs within D2.2, and between D2.2 and D2.1.** **[unverified]**[^new]
 	- D2.2's printed Table 6 and its embedded Annex 2 give different TRLs for the same systems:[^a22p-trl]
 		- PigInspector ear and tail lesions: 9 in Table 6, 5 in Annex 2. The annex agrees with D1.6.
 		- Weight-Detect: 7 in Table 6, 5 in Annex 2.
 		- CLK Bleeding control: 9 in Table 6, 2–3 in Annex 2.
 	- D2.1 gives 9 for PigInspector ear and tail lesions[^a21p-p5-8] and for Bleeding control.[^a21p-p11]
 	- D2.1 gives eYeNamic gait scoring TRL 4 in one row and 9 in another,[^a21b-b2] and catch-damage imaging TRL 4 against 7 in D1.6.[^a21b-b12]
-- **D12. BroilerZoom.** Catalogue p.112: "externally validated". D2.2 p.33 reports "average relative mean error of 8%", with "errors … generally larger in the end of the rearing period": no R or accuracy against the D2.2 criterion.
 
 <!-- Footnotes. GitHub and Obsidian both render these as numbered notes at the end of the page, in order of first use. -->
 
-[^new]: Added 22 Nov 2026 from a source already in the repository or opened that day. Not yet checked in the verification log (`verification/verification-log-A-B.md`).
+[^new]: Added 22 Nov 2026 from aWISH deliverables, Zenodo records, or web sources. Not yet checked in the verification log (`verification/verification-log-A-B.md`).
 
-[^bse]: BSE-rev: Ramon-Perez et al. 2025, *Biosystems Engineering* 259:104286, DOI 10.1016/j.biosystemseng.2025.104286. All its figures are from cited third-party, pre-aWISH studies.
+[^bse]: BSE-rev: Ramon-Perez et al. 2025, *Biosystems Engineering* 259:104286, DOI [10.1016/j.biosystemseng.2025.104286](https://doi.org/10.1016/j.biosystemseng.2025.104286). All its figures are from cited third-party, pre-aWISH studies.
 [^bse-4]: BSE-rev, p.4.
 [^bse-10]: BSE-rev, p.10.
-[^ps26]: PS-2026: van Staaveren et al. 2026, *Poultry Science* 105(7):106968, DOI 10.1016/j.psj.2026.106968. Peer-reviewed, aWISH-period, open access (CC BY).
-[^ar25]: Banhazi et al. 2025, *Agronomy Research* 23(S1):5–14, DOI 10.15159/AR.25.032.
-[^ar26]: Banhazi et al. 2026, *Agronomy Research* 24(2):76–95, DOI 10.15159/AR.26.034. Local copy: `deliverables/publication-sweep/Banhazi 2026 AgronRes - Lesion-Detect development and pilot testing (doi AR.26.034).pdf`.
+[^ps26]: PS-2026: van Staaveren et al. 2026, *Poultry Science* 105(7):106968, DOI [10.1016/j.psj.2026.106968](https://doi.org/10.1016/j.psj.2026.106968). Peer-reviewed, aWISH-period, open access (CC BY).
+[^ar25]: Banhazi et al. 2025, *Agronomy Research* 23(S1):5–14, DOI [10.15159/AR.25.032](https://doi.org/10.15159/AR.25.032).
+[^ar26]: Banhazi et al. 2026, *Agronomy Research* 24(2):76–95, DOI [10.15159/AR.26.034](https://doi.org/10.15159/AR.26.034).
 [^ar26-p]: Banhazi et al. 2026, PDF pp.14–15.
-[^blomke]: Blömke et al. 2020, DOI 10.1016/j.meatsci.2019.107934.
-[^isae25]: Ramon-Perez et al., 58th ISAE Congress 2025, poster abstract, DOI 10.5281/zenodo.17475558, p.1. Local copy: `papers/Ramon-Perez 2025 ISAE - tail length and lesions tool (zenodo 17475558).pdf`.
-[^hsa25]: Ramon-Perez et al., HSA Conference 2025, DOI 10.5281/zenodo.17475673, p.1. Local copy: `papers/Ramon-Perez 2025 HSA - pig consciousness sensor development (zenodo 17475673).pdf`.
-[^ecplf]: Westendorff et al., ECPLF 2024, DOI 10.5281/zenodo.18549284: quote p.1; n = 75 piglets p.4; BMEL funding p.8. Local copy: `papers/Westendorff 2024 ECPLF - area-specific vocalisation and activity (zenodo 18549284).pdf`.
-[^fe-p8]: aWISH Final Event (EAAP, Hamburg, 10 Sep 2026), slide deck, PDF pp.100–111. Local copy: `deliverables/publication-sweep/aWISH Final Event presentations, EAAP 10 Sep 2026 (website upload 17 Oct).pdf`.
+[^blomke]: Blömke et al. 2020, DOI [10.1016/j.meatsci.2019.107934](https://doi.org/10.1016/j.meatsci.2019.107934).
+[^isae25]: Ramon-Perez et al., 58th ISAE Congress 2025, poster abstract, DOI [10.5281/zenodo.17475558](https://doi.org/10.5281/zenodo.17475558), p.1.
+[^hsa25]: Ramon-Perez et al., HSA Conference 2025, DOI [10.5281/zenodo.17475673](https://doi.org/10.5281/zenodo.17475673), p.1.
+[^ecplf]: Westendorff et al., ECPLF 2024, DOI [10.5281/zenodo.18549284](https://doi.org/10.5281/zenodo.18549284): quote p.1; n = 75 piglets p.4; BMEL funding p.8.
+[^fe-p8]: aWISH Final Event (EAAP, Hamburg, 10 Sep 2026), slide deck (uploaded to aWISH website 17 Oct 2026), PDF pp.100–111.
 [^fe-p10]: aWISH Final Event slide deck (as above), PDF p.121.
 [^zen-tear]: van Langeveld et al., ISAE Benelux 2024 abstract, https://zenodo.org/records/17803862.
-[^verl-eaap]: Verlinde et al., EAAP 2026 abstract, DOI 10.5281/zenodo.23688694, p.1. Local copy: `deliverables/post-end-sweep/Verlinde 2026 EAAP - tear staining CV validation (zenodo 23688694).pdf`.
-[^verl-ai4as]: Verlinde et al., AI4AS 2026 abstract, DOI 10.5281/zenodo.23688353, p.1. Local copy: `deliverables/post-end-sweep/Verlinde 2026 AI4AS - tear staining at slaughter (zenodo 23688353).pdf`.
-[^sztand]: Sztandarski et al. 2026, *Poultry Science* 105:107825, p.6; Zenodo copy DOI 10.5281/zenodo.23694494. Local copy: `deliverables/post-end-sweep/Sztandarski 2026 PSJ - catch damage systematic review (zenodo 23694494).pdf`.
-[^cfd]: Guyot, Galliot, Roux, Creach, "Improving Broiler Transport Efficiency Using CFD: Heat Stress Analysis and Mitigation Measures", EAAP 2025, Innsbruck, DOI 10.5281/zenodo.17423125. Slide deck: slide 5 for the truck monitoring, slide 7 for the RMSE and R² values (the R² values are printed inside the chart). Local copy: `papers/Guyot 2025 EAAP - broiler transport CFD heat-stress model (zenodo 17423125).pptx` (MD5 matches the Zenodo record).
-[^mie]: aWISH Meat Industry Event, 8 Oct 2026, slide deck: slide 25 (Pfeiffer et al.; Ramon-Pérez et al., tail classifier), slide 83 (tail classifier), slide 82 (corneal-reflex tracking). Local copy: `deliverables/post-end-sweep/Meat Industry Event slide deck (website upload Nov 2026).pdf`.
+[^verl-eaap]: Verlinde et al., EAAP 2026 abstract, DOI [10.5281/zenodo.23688694](https://doi.org/10.5281/zenodo.23688694), p.1.
+[^verl-ai4as]: Verlinde et al., AI4AS 2026 abstract, DOI [10.5281/zenodo.23688353](https://doi.org/10.5281/zenodo.23688353), p.1.
+[^sztand]: Sztandarski et al. 2026, *Poultry Science* 105:107825, p.6; Zenodo copy DOI [10.5281/zenodo.23694494](https://doi.org/10.5281/zenodo.23694494).
+[^cfd]: Guyot, Galliot, Roux, Creach, "Improving Broiler Transport Efficiency Using CFD: Heat Stress Analysis and Mitigation Measures", EAAP 2025, Innsbruck, DOI [10.5281/zenodo.17423125](https://doi.org/10.5281/zenodo.17423125). Slide deck: slide 5 for the truck monitoring, slide 7 for the RMSE and R² values (the R² values are printed inside the chart).
+[^mie]: aWISH Meat Industry Event, 8 Oct 2026, slide deck (uploaded to aWISH website Nov 2026): slide 25 (Pfeiffer et al.; Ramon-Pérez et al., tail classifier), slide 83 (tail classifier), slide 82 (corneal-reflex tracking).
 
-[^annex-files]: Extracted copies: `deliverables/D2.1 and D2.2 annexes (extracted from PDFs)/`. In the PDFs, open the attachments pane, or run `pdfdetach -saveall`. Row numbers below are spreadsheet rows.
+[^annex-files]: Embedded as Excel attachments inside the D2.1 and D2.2 PDFs (open the PDF attachments pane or extract with `pdfdetach -saveall`). Row numbers below are spreadsheet rows.
 [^annex-labels]: D2.1 App. 1 and 2, sheet "Column labels".
 [^d21-15]: D2.1, p.15.
 [^a22p-p1]: D2.2 Ann. 2 (pigs), sheet "List of sensors", rows 18–20.
@@ -969,7 +972,7 @@ Listing sources:
 [^p8-s]: Catalogue pp.53–57; D2.2 p.19; D1.8 p.28.
 [^p8-chk]: Checked D2.2; Catalogue pp.53–57.
 [^p9-s]: Catalogue pp.58–60; D2.2 pp.13, 19; D1.6 pp.9, 11; D1.8 p.30.
-[^p10-nuna]: Catalogue p.62: "Provider nunaSolutions … under development within the aWISH project"; D1.8 p.30: "Stunning effectiveness (Nuna solutions)"; pack F §6 (not published). Also Catalogue pp.61–63.
+[^p10-nuna]: Catalogue p.62: "Provider nunaSolutions … under development within the aWISH project"; D1.8 p.30: "Stunning effectiveness (Nuna solutions)"; Nuna Solutions' website. Also Catalogue pp.61–63.
 [^p10-docs]: D1.1, D1.2, D1.4, D1.5, D1.6, D1.8, D2.1 and its annexes, D2.2, D4.3, D5.2, D6.2, D6.3, the AWI Catalogue and the CORDIS listing.
 [^p10-chk]: Checked D2.2; Catalogue pp.61–63.
 [^p11-s]: Catalogue pp.64–69; D2.2 p.19.
@@ -980,7 +983,7 @@ Listing sources:
 [^p15-s]: Catalogue pp.79–86; D2.2 p.27.
 [^p15-chk]: Checked D2.2 p.27; Catalogue pp.79–86.
 [^p16-s]: Catalogue pp.87–88; D2.2 p.28 (prototype mention); D1.8 p.30.
-[^p16-ilvo]: D1.8 p.30: "Tear staining (ILVO)"; project website pilots page: "Tear staining system (ILVO)"; pack D (not published).
+[^p16-ilvo]: D1.8 p.30: "Tear staining (ILVO)"; aWISH project website pilots page: "Tear staining system (ILVO)".
 [^p16-chk]: Checked D2.2; Catalogue p.88.
 [^p17-chk]: Checked D2.2; Catalogue pp.89–90.
 [^p18-chk]: Checked D2.2; Catalogue pp.91–92.
